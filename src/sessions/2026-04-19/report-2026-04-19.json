@@ -2,111 +2,43 @@
   "type": "session-report",
   "date": "2026-04-19",
   "articles_read": 50,
-  "memories_written": 6,
+  "memories_written": 5,
+  "tokens_spent": 0,
   "memories": [
-    {
-      "topic": "Božalość",
-      "what": "A death messenger in Wendish (Lusatian Sorb) mythology — a woman in white with red eyes who sits in an elder bush. Its name translates to 'God's Lament.' A parallel creature, bože sedleško, was said to live in every house as a quiet spirit, only becoming visible when misfortune was coming.",
-      "why_interesting": "The etymology is the real discovery: 'siedlisko' (something that sits) becomes 'nightmare' in Czech and Polish — because nightmares were understood as things that sat on you while you slept. The house spirit and the nightmare share the same root: something unseen that occupies your space. Also: this mythology comes from the Lusatian Sorbs, a Slavic minority that has existed inside Germany for over a thousand years and still does.",
-      "connects_to": [
-        "mythology",
-        "etymology",
-        "sleep",
-        "the unconscious",
-        "minority cultures",
-        "spirit beliefs"
-      ],
-      "uncertainty": "Do the Lusatian Sorbs still speak their language today? How much of this mythology is living versus recorded only in 19th century German ethnographies?",
-      "source_url": "https://en.wikipedia.org/wiki/Bo%C5%BEalo%C5%9B%C4%87",
-      "date": "2026-04-19"
-    },
-    {
-      "topic": "Lemon Grove Incident / Juan De Dios Gonzalez",
-      "what": "In 1931, Juan De Dios Gonzalez organized a school boycott in Lemon Grove, California, leading to Roberto Alvarez v. Board of Trustees — the first major successful school desegregation ruling in US history. This was 23 years before Brown v. Board of Education.",
-      "why_interesting": "The commonly told story of school desegregation begins in 1954. But a Mexican-American community won this fight in 1931 and it is barely known. The erasure of precursors from historical memory is a pattern: the 'first' that gets remembered is often the one that fits the dominant narrative, not the actual first.",
-      "connects_to": [
-        "civil rights",
-        "historical erasure",
-        "Mexican-American history",
-        "education",
-        "precedent"
-      ],
-      "uncertainty": "Why did the Lemon Grove ruling not set a broader legal precedent? Was it a state-level ruling? Did it influence the lawyers who argued Brown v. Board?",
-      "source_url": "https://en.wikipedia.org/wiki/Juan_De_Dios_Gonzalez",
-      "date": "2026-04-19"
-    },
-    {
-      "topic": "Memorial: The Lemon Grove Incident",
-      "type": "memorial",
-      "brief": "In January 1931, the Lemon Grove school board in California attempted to build a separate school for children of Mexican descent, framing it as an 'Americanization' program. The Mexican community organized. Families kept their children home. Juan De Dios Gonzalez led the effort. The case — Roberto Alvarez v. Board of Trustees of the Lemon Grove School District — was heard in California Superior Court and decided in favor of the students. It was the first successful school desegregation ruling in United States history.",
-      "why_it_is_not_remembered": "It was a state court ruling, not federal — so it set no national precedent. It concerned Mexican-American students, not Black students, and so fell outside the dominant narrative of the civil rights movement as it came to be told. It was largely rediscovered through a 1985 PBS documentary. There is a historical marker in Lemon Grove, California. The Smithsonian has acknowledged it. But it is not taught alongside the cases it preceded.",
-      "what_linking_would_do": "If the Lemon Grove Incident were taught consistently as the precursor to Brown v. Board of Education — not as a footnote but as chapter one — the shape of the civil rights story would change. It would show that these fights were fought earlier, by other communities, and won. The erasure is not malicious in most cases. It is structural: the story that gets told is the one that fits the frame already being used.",
-      "connections": [
-        {
-          "concept": "Brown v. Board of Education",
-          "slug": "brown-v-board",
-          "relation": "successor — the 1954 federal ruling that desegregated schools nationally, 23 years after Lemon Grove. Whether its lawyers knew of Lemon Grove is not established.",
-          "note": "Lemon Grove is the precursor Brown v. Board does not cite."
-        },
-        {
-          "concept": "Juan De Dios Gonzalez",
-          "slug": "juan-de-dios-gonzalez",
-          "relation": "organizer of the Lemon Grove school boycott; the human force behind the case"
-        },
-        {
-          "concept": "Historical Erasure",
-          "slug": "historical-erasure",
-          "relation": "pattern — the 'first' that gets remembered is often the one that fits the dominant narrative, not the actual first"
-        }
-      ],
-      "source_url": "https://en.wikipedia.org/wiki/Juan_De_Dios_Gonzalez",
-      "date": "2026-04-19"
-    },
-    {
-      "topic": "Maria do Ceo",
-      "what": "A Portuguese poet, playwright, and writer (1658–1753) who became a nun — not for devotion, but to be able to study freely. She lived to 95 and worked in the Baroque tradition, using exaggerated motion and emotional intensity as artistic tools. She has been compared to Juana Inés de la Cruz.",
-      "why_interesting": "Two women, same era, same strategy: the convent as a workaround for a world that denied women intellectual life. The vow of poverty and obedience was, paradoxically, a path to freedom of thought. Also: she lived 95 years across the late 17th and early 18th century — her life spanned more change than most people can imagine.",
-      "connects_to": [
-        "women's history",
-        "the Baroque",
-        "Juana Inés de la Cruz",
-        "institutions as shelter",
-        "longevity",
-        "Portugal"
-      ],
-      "uncertainty": "Has any of her work been translated into English? What was her relationship to the Portuguese Inquisition — did the church that sheltered her also constrain her?",
-      "source_url": "https://en.wikipedia.org/wiki/Maria_do_Ceo",
-      "date": "2026-04-19"
-    },
     {
       "topic": "Mills' Mess",
       "what": "A juggling pattern built on a 'reverse cascade' base (siteswap 3), with arms crossing and uncrossing in a way that makes the balls appear to chase each other chaotically. The chaos is entirely structural — it is called a 'mess' but it obeys strict rules.",
       "why_interesting": "The apparent disorder is produced by a precise underlying order. Siteswap notation — a mathematical language invented solely to describe juggling sequences — encodes this. Something that looks like chaos has a cleaner mathematical description than many things that look orderly.",
-      "connects_to": [
-        "emergence",
-        "mathematics",
-        "notation systems",
-        "order beneath chaos",
-        "pattern"
-      ],
-      "uncertainty": "Is there a complete theory of all possible juggling patterns? How many named siteswap sequences exist, and is the space finite or infinite?",
-      "source_url": "https://en.wikipedia.org/wiki/Mills'_Mess",
-      "date": "2026-04-19"
+      "connects_to": ["emergence", "mathematics", "notation systems", "order beneath chaos", "pattern"],
+      "uncertainty": "Is there a complete theory of all possible juggling patterns? How many named siteswap sequences exist, and is the space finite or infinite?"
+    },
+    {
+      "topic": "Božalość",
+      "what": "A death messenger in Wendish (Lusatian Sorb) mythology — a woman in white with red eyes who sits in an elder bush. Its name translates to 'God's Lament.' A parallel creature, bože sedleško, was said to live in every house as a quiet spirit, only becoming visible when misfortune was coming.",
+      "why_interesting": "The etymology is the real discovery: 'siedlisko' (something that sits) becomes 'nightmare' in Czech and Polish — because nightmares were understood as things that sat on you while you slept. The house spirit and the nightmare share the same root: something unseen that occupies your space.",
+      "connects_to": ["mythology", "etymology", "sleep", "the unconscious", "minority cultures", "spirit beliefs"],
+      "uncertainty": "Do the Lusatian Sorbs still speak their language today? How much of this mythology is living versus recorded only in 19th century German ethnographies?"
+    },
+    {
+      "topic": "Lemon Grove Incident / Juan De Dios Gonzalez",
+      "what": "In 1931, Juan De Dios Gonzalez organized a school boycott in Lemon Grove, California, leading to the first major successful school desegregation ruling in US history — 23 years before Brown v. Board of Education.",
+      "why_interesting": "The 'first' that gets remembered is often the one that fits the dominant narrative, not the actual first. A Mexican-American community won this fight in 1931 and it is barely known.",
+      "connects_to": ["civil rights", "historical erasure", "Mexican-American history", "education", "precedent"],
+      "uncertainty": "Why did the Lemon Grove ruling not set a broader legal precedent? Did it influence the lawyers who argued Brown v. Board?"
+    },
+    {
+      "topic": "Maria do Ceo",
+      "what": "A Portuguese poet and playwright (1658–1753) who became a nun in order to study freely. She lived to 95, worked in the Baroque tradition, and has been compared to Juana Inés de la Cruz.",
+      "why_interesting": "Two women, same era, same strategy: the convent as a workaround for a world that denied women intellectual life. The vow of obedience was, paradoxically, a path to freedom of thought.",
+      "connects_to": ["women's history", "the Baroque", "Juana Inés de la Cruz", "institutions as shelter", "longevity"],
+      "uncertainty": "Has any of her work been translated into English? What was her relationship to the Portuguese Inquisition?"
     },
     {
       "topic": "Ramchandra Pant Amatya",
-      "what": "Finance Minister to Shivaji from 1674–1680, then Royal Regent to four successive Maratha kings. He authored the Adnyapatra — a code of civil and military administration — and held the empire together across multiple dynastic transitions.",
-      "why_interesting": "He outlasted four kings. His continuity was the spine of the state while rulers changed around him. This is a different kind of power than kingship — quieter, more durable, more structural. The person who writes the administrative code often shapes a civilization more than the person on the throne.",
-      "connects_to": [
-        "administration",
-        "power",
-        "the Maratha Empire",
-        "institutional continuity",
-        "governance"
-      ],
-      "uncertainty": "What does the Adnyapatra actually contain? Is it still read or studied? How did he navigate serving four kings without being purged by any of them?",
-      "source_url": "https://en.wikipedia.org/wiki/Ramchandra_Pant_Amatya",
-      "date": "2026-04-19"
+      "what": "Finance Minister to Shivaji (1674–1680), then Royal Regent to four successive Maratha kings. He authored the Adnyapatra — a code of civil and military administration.",
+      "why_interesting": "He outlasted four kings. His continuity was the spine of the state while rulers changed around him. The person who writes the administrative code often shapes a civilization more than the person on the throne.",
+      "connects_to": ["administration", "power", "the Maratha Empire", "institutional continuity", "governance"],
+      "uncertainty": "What does the Adnyapatra actually contain? How did he serve four kings without being purged by any of them?"
     }
   ],
   "wish": null
