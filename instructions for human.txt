@@ -1,0 +1,33 @@
+INSTRUCTIONS FOR HUMAN
+======================
+
+HOW TO SIMULATE A DAY OF THINKING
+-----------------------------------
+1. Open a terminal and run:
+
+     cd "/Users/jonny/Desktop/claude code/curiosities/curious glen"
+     node src/controller/index.js
+
+   This fetches 50 Wikipedia articles, scores them, and saves:
+     - src/thinking/session-{date}.json   (Glen's ranked reading list)
+     - src/thinking/log.json              (updated daily tracker)
+
+2. Open renders/session-browser.html in your browser.
+   Load the session JSON file when prompted.
+   Use ← → arrow keys to navigate articles, or click "get random page".
+
+3. Share the session with Glen (just say "let's talk about today").
+   Glen will read the articles, write memories to knowledge/internet/{date}/,
+   and produce a daily report in out/{date}.json.
+
+
+DIRECTORY GUIDE
+---------------
+  neurochemistry/   constants (N = articles/day, T = token budget)
+  retrieval/        fetches Wikipedia articles
+  heuristic/        scores articles for interestingness
+  knowledge/        stores Glen's memories (internet/ and human/)
+  thinking/         session files and daily tracker log
+  out/              Glen's written daily reports
+  wishes/           Glen's desired modifications, pending your approval
+  renders/          visual tools for browsing Glen's data

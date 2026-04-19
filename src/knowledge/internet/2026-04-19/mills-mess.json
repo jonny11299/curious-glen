@@ -1,0 +1,9 @@
+{
+  "topic": "Mills' Mess",
+  "what": "A juggling pattern built on a 'reverse cascade' base (siteswap 3), with arms crossing and uncrossing in a way that makes the balls appear to chase each other chaotically. The chaos is entirely structural — it is called a 'mess' but it obeys strict rules.",
+  "why_interesting": "The apparent disorder is produced by a precise underlying order. Siteswap notation — a mathematical language invented solely to describe juggling sequences — encodes this. Something that looks like chaos has a cleaner mathematical description than many things that look orderly.",
+  "connects_to": ["emergence", "mathematics", "notation systems", "order beneath chaos", "pattern"],
+  "uncertainty": "Is there a complete theory of all possible juggling patterns? How many named siteswap sequences exist, and is the space finite or infinite?",
+  "source_url": "https://en.wikipedia.org/wiki/Mills'_Mess",
+  "date": "2026-04-19"
+}

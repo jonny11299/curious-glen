@@ -1,0 +1,24 @@
+{
+  "dimensions": {
+    "novelty": {
+      "weight": 1.0,
+      "keywords": ["discovered", "first", "unknown", "rare", "unprecedented", "new", "recently"]
+    },
+    "connection": {
+      "weight": 1.2,
+      "keywords": ["related", "similar", "analogy", "parallel", "network", "linked", "shared", "between"]
+    },
+    "elegance": {
+      "weight": 0.8,
+      "keywords": ["simple", "elegant", "beautiful", "symmetry", "pattern", "structure", "minimal"]
+    },
+    "surprise": {
+      "weight": 1.1,
+      "keywords": ["unexpected", "paradox", "counterintuitive", "despite", "although", "however", "yet"]
+    },
+    "depth": {
+      "weight": 0.9,
+      "keywords": ["complex", "fundamental", "underlying", "mechanism", "theory", "principle", "system"]
+    }
+  }
+}

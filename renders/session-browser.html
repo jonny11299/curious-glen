@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>curious glen — session browser</title>
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      font-family: 'Georgia', serif;
+      background: #f5f2eb;
+      color: #222;
+      height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      padding: 2rem;
+    }
+
+    #loader {
+      text-align: center;
+    }
+
+    #loader p {
+      font-size: 0.9rem;
+      color: #888;
+      margin-bottom: 1rem;
+    }
+
+    #loader input[type="file"] {
+      display: none;
+    }
+
+    .btn {
+      background: none;
+      border: 1px solid #aaa;
+      padding: 0.5rem 1.2rem;
+      font-family: inherit;
+      font-size: 0.85rem;
+      cursor: pointer;
+      color: #444;
+      border-radius: 2px;
+      transition: background 0.15s;
+    }
+
+    .btn:hover { background: #e8e3d8; }
+
+    #browser {
+      display: none;
+      width: 100%;
+      max-width: 720px;
+    }
+
+    #meta {
+      font-size: 0.75rem;
+      color: #999;
+      margin-bottom: 1.5rem;
+      display: flex;
+      justify-content: space-between;
+    }
+
+    #scores {
+      display: flex;
+      gap: 0.8rem;
+      flex-wrap: wrap;
+      margin-bottom: 1.5rem;
+    }
+
+    .score-pill {
+      font-size: 0.7rem;
+      padding: 0.2rem 0.6rem;
+      border: 1px solid #ccc;
+      border-radius: 999px;
+      color: #666;
+    }
+
+    .score-pill span {
+      color: #222;
+      font-weight: bold;
+    }
+
+    #title {
+      font-size: 1.8rem;
+      line-height: 1.2;
+      margin-bottom: 0.5rem;
+    }
+
+    #title a {
+      color: inherit;
+      text-decoration: none;
+      border-bottom: 1px solid #bbb;
+    }
+
+    #title a:hover { border-color: #555; }
+
+    #extract {
+      font-size: 0.95rem;
+      line-height: 1.7;
+      color: #444;
+      margin-top: 1.2rem;
+      max-height: 40vh;
+      overflow-y: auto;
+    }
+
+    #nav {
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+      margin-top: 2rem;
+    }
+
+    #counter {
+      font-size: 0.8rem;
+      color: #999;
+      flex: 1;
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+
+  <div id="loader">
+    <p>load a session file to begin</p>
+    <label class="btn" for="file-input">open session json</label>
+    <input type="file" id="file-input" accept=".json">
+  </div>
+
+  <div id="browser">
+    <div id="meta">
+      <span id="date-label"></span>
+      <span id="score-label"></span>
+    </div>
+    <div id="scores"></div>
+    <div id="title"></div>
+    <div id="extract"></div>
+    <div id="nav">
+      <button class="btn" id="prev">←</button>
+      <span id="counter"></span>
+      <button class="btn" id="next">→</button>
+      <button class="btn" id="random">get random page</button>
+    </div>
+  </div>
+
+  <script>
+    let articles = [];
+    let index = 0;
+
+    document.getElementById('file-input').addEventListener('change', e => {
+      const file = e.target.files[0];
+      if (!file) return;
+      const reader = new FileReader();
+      reader.onload = ev => {
+        articles = JSON.parse(ev.target.result);
+        index = 0;
+        document.getElementById('loader').style.display = 'none';
+        document.getElementById('browser').style.display = 'block';
+        const date = file.name.replace('session-', '').replace('.json', '');
+        document.getElementById('date-label').textContent = date;
+        render();
+      };
+      reader.readAsText(file);
+    });
+
+    function render() {
+      const a = articles[index];
+      const h = a.heuristic;
+
+      document.getElementById('score-label').textContent = `heuristic score: ${h.total}`;
+
+      const scoresEl = document.getElementById('scores');
+      scoresEl.innerHTML = Object.entries(h.scores)
+        .map(([k, v]) => `<div class="score-pill">${k} <span>${(v * 100).toFixed(0)}%</span></div>`)
+        .join('');
+
+      document.getElementById('title').innerHTML =
+        `<a href="${a.url}" target="_blank">${a.title}</a>`;
+
+      document.getElementById('extract').textContent =
+        a.extract || '(no extract available)';
+
+      document.getElementById('counter').textContent =
+        `${index + 1} / ${articles.length}`;
+    }
+
+    document.getElementById('prev').addEventListener('click', () => {
+      index = (index - 1 + articles.length) % articles.length;
+      render();
+    });
+
+    document.getElementById('next').addEventListener('click', () => {
+      index = (index + 1) % articles.length;
+      render();
+    });
+
+    document.getElementById('random').addEventListener('click', () => {
+      index = Math.floor(Math.random() * articles.length);
+      render();
+    });
+
+    document.addEventListener('keydown', e => {
+      if (!articles.length) return;
+      if (e.key === 'ArrowLeft') { index = (index - 1 + articles.length) % articles.length; render(); }
+      if (e.key === 'ArrowRight') { index = (index + 1) % articles.length; render(); }
+    });
+  </script>
+
+</body>
+</html>

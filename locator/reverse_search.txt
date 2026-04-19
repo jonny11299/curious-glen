@@ -1,0 +1,2 @@
+create a reverse-mapped list of directories, 
+so a file --> directory it lives in mapping
