@@ -1,0 +1,287 @@
+{
+  "built": "2026-04-19T04:07:56.568Z",
+  "nodes": {
+    "mythology-as-phenomenology": {
+      "label": "Mythology as Phenomenology",
+      "file": "knowledge/human/sleep-paralysis-mythology.json",
+      "date": "2026-04-19"
+    },
+    "bo-alo": {
+      "label": "Božalość",
+      "file": "knowledge/internet/2026-04-19/bozalosць.json",
+      "date": "2026-04-19"
+    },
+    "lemon-grove-incident-juan-de-dios-gonzalez": {
+      "label": "Lemon Grove Incident / Juan De Dios Gonzalez",
+      "file": "knowledge/internet/2026-04-19/lemon-grove-incident.json",
+      "date": "2026-04-19"
+    },
+    "memorial-the-lemon-grove-incident": {
+      "label": "Memorial: The Lemon Grove Incident",
+      "file": "knowledge/internet/2026-04-19/lemon-grove-memorial.json",
+      "date": "2026-04-19"
+    },
+    "maria-do-ceo": {
+      "label": "Maria do Ceo",
+      "file": "knowledge/internet/2026-04-19/maria-do-ceo.json",
+      "date": "2026-04-19"
+    },
+    "mills-mess": {
+      "label": "Mills' Mess",
+      "file": "knowledge/internet/2026-04-19/mills-mess.json",
+      "date": "2026-04-19"
+    },
+    "ramchandra-pant-amatya": {
+      "label": "Ramchandra Pant Amatya",
+      "file": "knowledge/internet/2026-04-19/ramchandra-pant-amatya.json",
+      "date": "2026-04-19"
+    }
+  },
+  "edges": [
+    {
+      "from": "mythology-as-phenomenology",
+      "to": "bo-alo",
+      "to_label": "Božalość",
+      "relation": "connects_to",
+      "note": null
+    },
+    {
+      "from": "mythology-as-phenomenology",
+      "to": "felt-experience-vs-clinical-description",
+      "to_label": "felt experience vs. clinical description",
+      "relation": "connects_to",
+      "note": null
+    },
+    {
+      "from": "mythology-as-phenomenology",
+      "to": "the-body-as-knowledge",
+      "to_label": "the body as knowledge",
+      "relation": "connects_to",
+      "note": null
+    },
+    {
+      "from": "mythology-as-phenomenology",
+      "to": "how-culture-forms",
+      "to_label": "how culture forms",
+      "relation": "connects_to",
+      "note": null
+    },
+    {
+      "from": "mythology-as-phenomenology",
+      "to": "bozalosць",
+      "to_label": "Božalość",
+      "relation": "specific instance — a Lusatian Sorb death-messenger whose parallel house-spirit shares the same etymology as 'nightmare'",
+      "note": null
+    },
+    {
+      "from": "bo-alo",
+      "to": "mythology",
+      "to_label": "mythology",
+      "relation": "connects_to",
+      "note": null
+    },
+    {
+      "from": "bo-alo",
+      "to": "etymology",
+      "to_label": "etymology",
+      "relation": "connects_to",
+      "note": null
+    },
+    {
+      "from": "bo-alo",
+      "to": "sleep",
+      "to_label": "sleep",
+      "relation": "connects_to",
+      "note": null
+    },
+    {
+      "from": "bo-alo",
+      "to": "the-unconscious",
+      "to_label": "the unconscious",
+      "relation": "connects_to",
+      "note": null
+    },
+    {
+      "from": "bo-alo",
+      "to": "minority-cultures",
+      "to_label": "minority cultures",
+      "relation": "connects_to",
+      "note": null
+    },
+    {
+      "from": "bo-alo",
+      "to": "spirit-beliefs",
+      "to_label": "spirit beliefs",
+      "relation": "connects_to",
+      "note": null
+    },
+    {
+      "from": "lemon-grove-incident-juan-de-dios-gonzalez",
+      "to": "civil-rights",
+      "to_label": "civil rights",
+      "relation": "connects_to",
+      "note": null
+    },
+    {
+      "from": "lemon-grove-incident-juan-de-dios-gonzalez",
+      "to": "historical-erasure",
+      "to_label": "historical erasure",
+      "relation": "connects_to",
+      "note": null
+    },
+    {
+      "from": "lemon-grove-incident-juan-de-dios-gonzalez",
+      "to": "mexican-american-history",
+      "to_label": "Mexican-American history",
+      "relation": "connects_to",
+      "note": null
+    },
+    {
+      "from": "lemon-grove-incident-juan-de-dios-gonzalez",
+      "to": "education",
+      "to_label": "education",
+      "relation": "connects_to",
+      "note": null
+    },
+    {
+      "from": "lemon-grove-incident-juan-de-dios-gonzalez",
+      "to": "precedent",
+      "to_label": "precedent",
+      "relation": "connects_to",
+      "note": null
+    },
+    {
+      "from": "memorial-the-lemon-grove-incident",
+      "to": "brown-v-board",
+      "to_label": "Brown v. Board of Education",
+      "relation": "successor — the 1954 federal ruling that desegregated schools nationally, 23 years after Lemon Grove. Whether its lawyers knew of Lemon Grove is not established.",
+      "note": "Lemon Grove is the precursor Brown v. Board does not cite."
+    },
+    {
+      "from": "memorial-the-lemon-grove-incident",
+      "to": "juan-de-dios-gonzalez",
+      "to_label": "Juan De Dios Gonzalez",
+      "relation": "organizer of the Lemon Grove school boycott; the human force behind the case",
+      "note": null
+    },
+    {
+      "from": "memorial-the-lemon-grove-incident",
+      "to": "historical-erasure",
+      "to_label": "Historical Erasure",
+      "relation": "pattern — the 'first' that gets remembered is often the one that fits the dominant narrative, not the actual first",
+      "note": null
+    },
+    {
+      "from": "maria-do-ceo",
+      "to": "women-s-history",
+      "to_label": "women's history",
+      "relation": "connects_to",
+      "note": null
+    },
+    {
+      "from": "maria-do-ceo",
+      "to": "the-baroque",
+      "to_label": "the Baroque",
+      "relation": "connects_to",
+      "note": null
+    },
+    {
+      "from": "maria-do-ceo",
+      "to": "juana-in-s-de-la-cruz",
+      "to_label": "Juana Inés de la Cruz",
+      "relation": "connects_to",
+      "note": null
+    },
+    {
+      "from": "maria-do-ceo",
+      "to": "institutions-as-shelter",
+      "to_label": "institutions as shelter",
+      "relation": "connects_to",
+      "note": null
+    },
+    {
+      "from": "maria-do-ceo",
+      "to": "longevity",
+      "to_label": "longevity",
+      "relation": "connects_to",
+      "note": null
+    },
+    {
+      "from": "maria-do-ceo",
+      "to": "portugal",
+      "to_label": "Portugal",
+      "relation": "connects_to",
+      "note": null
+    },
+    {
+      "from": "mills-mess",
+      "to": "emergence",
+      "to_label": "emergence",
+      "relation": "connects_to",
+      "note": null
+    },
+    {
+      "from": "mills-mess",
+      "to": "mathematics",
+      "to_label": "mathematics",
+      "relation": "connects_to",
+      "note": null
+    },
+    {
+      "from": "mills-mess",
+      "to": "notation-systems",
+      "to_label": "notation systems",
+      "relation": "connects_to",
+      "note": null
+    },
+    {
+      "from": "mills-mess",
+      "to": "order-beneath-chaos",
+      "to_label": "order beneath chaos",
+      "relation": "connects_to",
+      "note": null
+    },
+    {
+      "from": "mills-mess",
+      "to": "pattern",
+      "to_label": "pattern",
+      "relation": "connects_to",
+      "note": null
+    },
+    {
+      "from": "ramchandra-pant-amatya",
+      "to": "administration",
+      "to_label": "administration",
+      "relation": "connects_to",
+      "note": null
+    },
+    {
+      "from": "ramchandra-pant-amatya",
+      "to": "power",
+      "to_label": "power",
+      "relation": "connects_to",
+      "note": null
+    },
+    {
+      "from": "ramchandra-pant-amatya",
+      "to": "the-maratha-empire",
+      "to_label": "the Maratha Empire",
+      "relation": "connects_to",
+      "note": null
+    },
+    {
+      "from": "ramchandra-pant-amatya",
+      "to": "institutional-continuity",
+      "to_label": "institutional continuity",
+      "relation": "connects_to",
+      "note": null
+    },
+    {
+      "from": "ramchandra-pant-amatya",
+      "to": "governance",
+      "to_label": "governance",
+      "relation": "connects_to",
+      "note": null
+    }
+  ]
+}

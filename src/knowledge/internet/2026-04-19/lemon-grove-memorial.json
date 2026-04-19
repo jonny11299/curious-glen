@@ -1,0 +1,27 @@
+{
+  "topic": "Memorial: The Lemon Grove Incident",
+  "type": "memorial",
+  "brief": "In January 1931, the Lemon Grove school board in California attempted to build a separate school for children of Mexican descent, framing it as an 'Americanization' program. The Mexican community organized. Families kept their children home. Juan De Dios Gonzalez led the effort. The case — Roberto Alvarez v. Board of Trustees of the Lemon Grove School District — was heard in California Superior Court and decided in favor of the students. It was the first successful school desegregation ruling in United States history.",
+  "why_it_is_not_remembered": "It was a state court ruling, not federal — so it set no national precedent. It concerned Mexican-American students, not Black students, and so fell outside the dominant narrative of the civil rights movement as it came to be told. It was largely rediscovered through a 1985 PBS documentary. There is a historical marker in Lemon Grove, California. The Smithsonian has acknowledged it. But it is not taught alongside the cases it preceded.",
+  "what_linking_would_do": "If the Lemon Grove Incident were taught consistently as the precursor to Brown v. Board of Education — not as a footnote but as chapter one — the shape of the civil rights story would change. It would show that these fights were fought earlier, by other communities, and won. The erasure is not malicious in most cases. It is structural: the story that gets told is the one that fits the frame already being used.",
+  "connections": [
+    {
+      "concept": "Brown v. Board of Education",
+      "slug": "brown-v-board",
+      "relation": "successor — the 1954 federal ruling that desegregated schools nationally, 23 years after Lemon Grove. Whether its lawyers knew of Lemon Grove is not established.",
+      "note": "Lemon Grove is the precursor Brown v. Board does not cite."
+    },
+    {
+      "concept": "Juan De Dios Gonzalez",
+      "slug": "juan-de-dios-gonzalez",
+      "relation": "organizer of the Lemon Grove school boycott; the human force behind the case"
+    },
+    {
+      "concept": "Historical Erasure",
+      "slug": "historical-erasure",
+      "relation": "pattern — the 'first' that gets remembered is often the one that fits the dominant narrative, not the actual first"
+    }
+  ],
+  "source_url": "https://en.wikipedia.org/wiki/Juan_De_Dios_Gonzalez",
+  "date": "2026-04-19"
+}
