@@ -8,3 +8,7 @@ interest-based searches)
 4. Heuristic scorer is keyword-only and scored nearly everything
 near zero today — needs rethinking
 5. Token tracker exists but isn't actually counting tokens yet
+
+
+
+6. Build a proper "renders/converse" app that allows us to conduct the daily session. (For now, though, it's very feasible through the terminal)

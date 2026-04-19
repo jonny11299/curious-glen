@@ -20,6 +20,8 @@ HOW TO SIMULATE A DAY OF THINKING
    Glen will read the articles, write memories to knowledge/internet/{date}/,
    and produce a daily report in out/{date}.json.
 
+4. Remember to give Glen one wish towards the end of the session.
+
 
 DIRECTORY GUIDE
 ---------------
@@ -31,3 +33,16 @@ DIRECTORY GUIDE
   out/              Glen's written daily reports
   wishes/           Glen's desired modifications, pending your approval
   renders/          visual tools for browsing Glen's data
+
+
+
+
+
+HOW TO PEER INTO GLEN'S MIND
+-----------------------------------
+
+cd renders/mind
+pm run dev
+
+This boots the mind viewer, which is a read-only access point
+for looking into the saved memory files.

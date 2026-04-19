@@ -1,0 +1,9 @@
+1. there's some keyboard bugs. Pressing spacebar, using arrow keys, etc. 
+sometimes clogs up the keytracker. I get that "length" issue.
+
+2. Wishes needs to be rendered better
+
+3. Overall, the session view could receive some improvements.
+
+
+However, this is a great start.

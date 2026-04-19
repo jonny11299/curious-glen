@@ -1,10 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <title>curious glen — session browser</title>
   <style>
-    * { box-sizing: border-box; margin: 0; padding: 0; }
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
 
     body {
       font-family: 'Georgia', serif;
@@ -44,7 +49,9 @@
       transition: background 0.15s;
     }
 
-    .btn:hover { background: #e8e3d8; }
+    .btn:hover {
+      background: #e8e3d8;
+    }
 
     #browser {
       display: none;
@@ -92,7 +99,9 @@
       border-bottom: 1px solid #bbb;
     }
 
-    #title a:hover { border-color: #555; }
+    #title a:hover {
+      border-color: #555;
+    }
 
     #extract {
       font-size: 0.95rem;
@@ -118,6 +127,7 @@
     }
   </style>
 </head>
+
 <body>
 
   <div id="loader">
@@ -151,11 +161,12 @@
       if (!file) return;
       const reader = new FileReader();
       reader.onload = ev => {
-        articles = JSON.parse(ev.target.result);
+        const parsed = JSON.parse(ev.target.result);
+        articles = Array.isArray(parsed) ? parsed : parsed.articles;
         index = 0;
         document.getElementById('loader').style.display = 'none';
         document.getElementById('browser').style.display = 'block';
-        const date = file.name.replace('session-', '').replace('.json', '');
+        const date = (parsed.date) || file.name.replace(/^raw-/, '').replace('.json', '');
         document.getElementById('date-label').textContent = date;
         render();
       };
@@ -206,4 +217,5 @@
   </script>
 
 </body>
+
 </html>

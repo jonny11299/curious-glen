@@ -1,0 +1,20 @@
+{
+  "name": "curious-glen-mind",
+  "version": "0.1.0",
+  "type": "module",
+  "scripts": {
+    "dev": "concurrently \"node server.js\" \"vite\"",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "express": "^4.18.2",
+    "marked": "^12.0.0"
+  },
+  "devDependencies": {
+    "@sveltejs/vite-plugin-svelte": "^3.0.0",
+    "concurrently": "^8.2.0",
+    "svelte": "^4.2.0",
+    "vite": "^5.0.0"
+  }
+}
