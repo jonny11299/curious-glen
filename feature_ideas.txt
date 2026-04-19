@@ -1,3 +1,10 @@
+: gotta link that api token
+1. Sessions: articles need to be above the chat log
+2. The "session-browser.html" formatting is perfect. This font, this formatting. Only thing would be to not have the buttons move around with re-rendered text. This is the way to go. Please reformat the "Sessions" articles and "Today" articles to be like this.
+3. Why are you reading only a small portion of the wikipedia page?
+
+
+
 1. let it connect its slugs somehow, form associative memory
 2. have the selector pick 30% of articles based on its interests, 70% randomly
 (so we would add to neurochemistry a constant defining the percentage of
