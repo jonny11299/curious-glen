@@ -7,8 +7,8 @@ import { fileURLToPath } from 'url';
 import { dirname, join } from 'path';
 
 const __dirname = dirname(fileURLToPath(import.meta.url));
+const OUT_DIR = join(__dirname, '../out');
 const TODAY = new Date().toISOString().split('T')[0];
-const SESS_DIR = join(__dirname, '../sessions', TODAY);
 
 async function run() {
   console.log(`[curious glen] ${TODAY} — beginning daily session`);
@@ -23,10 +23,9 @@ async function run() {
     .map(a => ({ ...a, heuristic: scoreArticle(a, heuristics) }))
     .sort((a, b) => b.heuristic.total - a.heuristic.total);
 
-  // save session file
-  if (!existsSync(SESS_DIR)) mkdirSync(SESS_DIR, { recursive: true });
-  const sessionPath = join(SESS_DIR, `raw-${TODAY}.json`);
-  writeFileSync(sessionPath, JSON.stringify({ type: 'session-raw', date: TODAY, articles: scored }, null, 2));
+  // save session file for glen to read
+  const sessionPath = join(__dirname, '../thinking', `session-${TODAY}.json`);
+  writeFileSync(sessionPath, JSON.stringify(scored, null, 2));
   console.log(`[curious glen] session saved → ${sessionPath}`);
 
   // update tracker
@@ -39,10 +38,9 @@ export async function report() {
   const memories = readMemories(TODAY);
   const record = getDayRecord(TODAY);
 
-  if (!existsSync(SESS_DIR)) mkdirSync(SESS_DIR, { recursive: true });
+  if (!existsSync(OUT_DIR)) mkdirSync(OUT_DIR, { recursive: true });
 
   const reportData = {
-    type: 'session-report',
     date: TODAY,
     articles_read: record.articles_read,
     memories_written: memories.length,
@@ -51,7 +49,7 @@ export async function report() {
     wish: record.wish || null
   };
 
-  const outPath = join(SESS_DIR, `report-${TODAY}.json`);
+  const outPath = join(OUT_DIR, `${TODAY}.json`);
   writeFileSync(outPath, JSON.stringify(reportData, null, 2));
   console.log(`[curious glen] report written → ${outPath}`);
   return reportData;

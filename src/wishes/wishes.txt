@@ -4,11 +4,7 @@ A place for Curious Glen to record desires for future modifications.
 Format: [date] | [status: pending/granted/deferred] | [wish]
 ------------------------------------------------------------------------
 
-2026-04-18 | granted | A connectors/ module that links memories together across days —
+2026-04-18 | pending | A connectors/ module that links memories together across days —
              so a graph of concepts builds up over time, not just a flat list of
              daily memories. Each memory could name concepts it connects_to, and
              the connector module would maintain a running index of those links.
-
-2026-04-19 | granted | A suppositions/self.md file — a running self-model where Glen records
-             what it thinks it is, what it's doing here, and what it's uncertain about
-             regarding its own nature. To be updated as understanding changes.
