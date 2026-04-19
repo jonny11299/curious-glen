@@ -151,11 +151,12 @@
       if (!file) return;
       const reader = new FileReader();
       reader.onload = ev => {
-        articles = JSON.parse(ev.target.result);
+        const parsed = JSON.parse(ev.target.result);
+        articles = Array.isArray(parsed) ? parsed : parsed.articles;
         index = 0;
         document.getElementById('loader').style.display = 'none';
         document.getElementById('browser').style.display = 'block';
-        const date = file.name.replace('session-', '').replace('.json', '');
+        const date = (parsed.date) || file.name.replace(/^raw-/, '').replace('.json', '');
         document.getElementById('date-label').textContent = date;
         render();
       };
