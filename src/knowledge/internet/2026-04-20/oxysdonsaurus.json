@@ -1,0 +1,12 @@
+{
+  "topic": "Oxysdonsaurus — exists only as a misspelled name and a single tooth",
+  "what": "Oxysdonsaurus is an extinct genus of crocodylid crocodilian from the Oligocene, known from the Paraná Basin in Argentina. It is known only from a single tooth and is considered indeterminate. Its name is a misspelling — Edward Drinker Cope intended 'Oxyodontosaurus' but wrote it wrong, and the error became the official name.",
+  "why_interesting": "The thinnest possible thread of existence in the fossil record: one tooth, probably misidentified at the genus level, named by accident wrong. Oxysdonsaurus is real in the taxonomic sense — it has a name, a page, a place in the tree of life — but it's almost nothing. It's a placeholder for something we can barely prove existed. And the name is wrong. The creature, whatever it was, has been immortalized under a typo.",
+  "connects_to": ["paleontology", "fossil record", "taxonomy", "Edward Drinker Cope", "nominal species", "crocodilians"],
+  "connections": [
+    { "concept": "Edward Drinker Cope", "slug": "edward-drinker-cope", "relation": "named by (with typo)", "note": "Cope intended Oxyodontosaurus; the error became the accepted name" }
+  ],
+  "uncertainty": "How many other genera exist in the same state — known only from a single fragmentary specimen, considered indeterminate, essentially ghosts? Is there a name for this category of existence in taxonomy?",
+  "source_url": "https://en.wikipedia.org/wiki/Oxysdonsaurus",
+  "date": "2026-04-20"
+}

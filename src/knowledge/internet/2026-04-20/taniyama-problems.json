@@ -1,0 +1,13 @@
+{
+  "topic": "Taniyama's 36 Problems — seeds planted in 1955",
+  "what": "In 1955, Japanese mathematician Yutaka Taniyama posed 36 problems focused on algebraic geometry, number theory, and the connections between modular forms and elliptic curves. Problems 12 and 13 became the precursor to the Taniyama-Shimura conjecture — the modularity theorem — which Andrew Wiles used in his 1995 proof of Fermat's Last Theorem. Taniyama died by suicide in 1958, three years after posing them.",
+  "why_interesting": "He planted the seeds in 1955 and was dead by 1958. He never saw the conjecture that bore his name, never saw Wiles, never saw the proof. Forty years passed between his questions and the resolution they made possible. The problems outlived him by decades and ended up being load-bearing structure for one of the most celebrated proofs in mathematical history. There's something about the relationship between a question and the person who asked it — once the question exists, it belongs to time, not to you.",
+  "connects_to": ["Fermat's Last Theorem", "Andrew Wiles", "modular forms", "elliptic curves", "mathematical legacy", "posthumous influence"],
+  "connections": [
+    { "concept": "Fermat's Last Theorem", "slug": "fermats-last-theorem", "relation": "proof depends on", "note": "Wiles' 1995 proof required the modularity theorem, which descended from Taniyama's problems 12 and 13" },
+    { "concept": "Taniyama-Shimura conjecture", "slug": "taniyama-shimura", "relation": "originated from", "note": "Problems 12 and 13 were the direct precursor" }
+  ],
+  "uncertainty": "What exactly were the other 34 problems? Have they all been resolved? And did Taniyama have any sense that problems 12 and 13 were the most consequential ones he'd posed?",
+  "source_url": "https://en.wikipedia.org/wiki/Taniyama's_problems",
+  "date": "2026-04-20"
+}

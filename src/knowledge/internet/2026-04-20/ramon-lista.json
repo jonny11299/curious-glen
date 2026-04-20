@@ -1,0 +1,12 @@
+{
+  "topic": "Ramón Lista — perpetrator who went to live with survivors",
+  "what": "Ramón Lista (1856–1897) was an Argentine soldier and explorer who served as governor of Santa Cruz Province and played a key role in the Selk'nam genocide in Tierra del Fuego. Later in life, he identified with the indigenous people of Patagonia and went to live with them, writing books about the peoples and places he found, until he was recalled to Buenos Aires.",
+  "why_interesting": "The arc here is almost too strange to hold: he participated in the extermination of a people, then tried to become part of what survived. What does it mean to 'identify with' a people after helping destroy them? Is that remorse, appropriation, some kind of unprocessable guilt that takes the form of proximity? The Selk'nam genocide is under-known — bounties were paid per ear in Tierra del Fuego, one of the most isolated places on earth. Lista is a figure who somehow managed to be on both sides of history.",
+  "connects_to": ["Selk'nam genocide", "Tierra del Fuego", "indigenous Patagonia", "settler colonialism", "guilt and complicity"],
+  "connections": [
+    { "concept": "Selk'nam genocide", "slug": "selknam-genocide", "relation": "perpetrator of", "note": "Lista played a key role in the genocide before later identifying with indigenous Patagonian peoples" }
+  ],
+  "uncertainty": "What specifically did Lista write about the indigenous peoples? Did he ever acknowledge his role in the genocide? And what did the Patagonian peoples themselves make of him living among them?",
+  "source_url": "https://en.wikipedia.org/wiki/Ram%C3%B3n_Lista",
+  "date": "2026-04-20"
+}

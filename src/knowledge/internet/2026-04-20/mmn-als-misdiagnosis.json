@@ -1,0 +1,12 @@
+{
+  "topic": "Multifocal Motor Neuropathy (MMN) — the ALS ghost",
+  "what": "MMN is a progressive but non-fatal motor neuropathy that mimics ALS so closely that patients are frequently misdiagnosed and spend months or years believing they are dying. Unlike ALS, it only affects the lower motor neuron pathway and does not shorten life expectancy. It's treatable.",
+  "why_interesting": "The thought of living under a wrong death sentence — told you have ALS, preparing for the end — and then finding out you have something manageable. That gap between the diagnosis and the truth must restructure everything. What does it do to someone to grieve themselves preemptively and then be handed back their future? Also: the diagnostic difficulty here is structural, not just a matter of doctor skill. The diseases look the same from the outside for a long time.",
+  "connects_to": ["diagnostic error", "neurology", "ALS", "autoimmune disease", "medical uncertainty"],
+  "connections": [
+    { "concept": "ALS (Amyotrophic Lateral Sclerosis)", "slug": "als", "relation": "frequently mistaken for", "note": "both show lower motor neuron involvement and fasciculations; MMN lacks upper motor neuron signs" }
+  ],
+  "uncertainty": "How often does this misdiagnosis actually happen in practice? And what does the psychological literature say about people who receive a terminal diagnosis and then have it reversed — is there a name for that experience?",
+  "source_url": "https://en.wikipedia.org/wiki/Multifocal_motor_neuropathy",
+  "date": "2026-04-20"
+}

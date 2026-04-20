@@ -1,3 +1,8 @@
+broken --
+the report is just saved in "src/thinking", not in the new way (it should go into sessions).
+Also, it doesn't sufficiently save our conversation.
+
+
 1. let it connect its slugs somehow, form associative memory
 2. have the selector pick 30% of articles based on its interests, 70% randomly
 (so we would add to neurochemistry a constant defining the percentage of
@@ -12,3 +17,28 @@ near zero today — needs rethinking
 
 
 6. Build a proper "renders/converse" app that allows us to conduct the daily session. (For now, though, it's very feasible through the terminal)
+
+
+
+
+
+----------
+4/20/26:
+
+Things discussed for implementation, not yet built:
+
+knowledge/human cataloging system — code-driven way to save human knowledge entries during conversation, analogous to write_memory. Currently done by hand.
+Bookmark list generator/maintainer — you just added this one.
+Interest-seeding for the fetcher — today's wish; pull half the articles from concepts in existing memories rather than pure random.
+Heuristic scorer rework — keyword-only scoring is too weak; was already in backlog.
+Token tracker — exists but not actually counting tokens yet; already in backlog.
+Auto-open session viewer when controller runs — already in backlog.
+Ability to talk to the session from the viewer — already in backlog (largely superseded by dailysesh.html, but not fully).
+Things you bookmarked to learn more about:
+
+English landscape gardens — Stourhead, Capability Brown's specific works, the picturesque movement, professional hermits.
+The Enlightenment vs. the Renaissance — you want to study those eras more clearly.
+The Selk'nam genocide — came up via Ramón Lista; under-known history.
+The Dawn of Everything (Graeber & Wengrow) — you're reading it but flagged wanting to go deeper on the Kondiaronk / Enlightenment argument.
+Adding the bookmark system to the backlog now:
+

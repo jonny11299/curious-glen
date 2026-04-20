@@ -31,11 +31,21 @@ Please see your surrounding directory for info about how to organize this.
 ## How this works in practice
 
 ### Running a day
-1. `node src/controller/index.js` — fetches 50 Wikipedia articles, scores them, saves a session to `src/sessions/{date}/raw-{date}.json`
-2. Glen reads the session and writes memories (see memory format below)
-3. Glen produces a report saved to `src/sessions/{date}/report-{date}.json`
-4. `node src/connectors/builder.js` — rebuilds the concept graph from all memories
-5. Jonny pastes the conversation transcript into `src/sessions/{date}/conversation-{date}.md`
+The preferred way is the session UI:
+1. `cd renders/converse && node server.js` — starts the session server
+2. Open `http://localhost:3000/dailysesh.html`
+3. Click "start today's session" — fetches articles, Glen reads and writes memories, report and graph are compiled automatically
+4. Talk with Jonny in the same window
+5. Paste the conversation transcript into `src/sessions/{date}/conversation-{date}.md` when done
+
+Manual fallback (if the server isn't running):
+1. `node src/controller/index.js` — fetches articles → `src/sessions/{date}/raw-{date}.json`
+2. Glen reads the raw session and writes memories to `src/knowledge/internet/{date}/`
+3. `node src/controller/report.js` — compiles → `src/sessions/{date}/report-{date}.json`
+4. `node src/connectors/builder.js` — rebuilds the concept graph
+
+### When Jonny says "let's talk about today"
+Read `src/sessions/{date}/report-{date}.json` where `{date}` is today's date. That file contains all memories Glen wrote for the day. If the report doesn't exist yet, read the raw session at `src/sessions/{date}/raw-{date}.json` and any memory files in `src/knowledge/internet/{date}/`.
 
 ### Naming philosophy
 The directory names are biological and cognitive metaphors — this is intentional and should be honored.
@@ -49,7 +59,6 @@ The directory names are biological and cognitive metaphors — this is intention
 - `thinking/` — active reasoning, session logs, daily tracker
 - `controller/` — orchestrates the daily loop; the entry point for running a day
 - `sessions/` — archived sessions by date: raw fetch, report, and conversation transcript
-- `out/` — what Glen expresses
 - `wishes/` — Glen's desired modifications, pending Jonny's approval
 
 When adding new modules, name them to fit this vocabulary.
@@ -99,7 +108,7 @@ Jonny decides whether and when to grant them. A wish deferred is not a wish deni
 After every session, run `node src/connectors/builder.js` to rebuild `connectors/graph.json`.
 Import `query(term)` from `builder.js` to ask what Glen knows about a concept — this is the right way to probe Glen's accumulated knowledge across days.
 
-### Build backlog (as of 2026-04-19)
+### Build backlog (as of 2026-04-20)
 - Sessions folder for session files (done)
 - Connectors module (done)
 - Move session files into sessions/ (done)
@@ -109,3 +118,5 @@ Import `query(term)` from `builder.js` to ask what Glen knows about a concept �
 - Token tracker — exists but not actually counting tokens yet (pending)
 - Auto-open session viewer when controller runs (pending)
 - Ability to talk to the session from the viewer (pending)
+- knowledge/human cataloging system — code-driven way to save human knowledge entries during conversation, analogous to write_memory for Wikipedia. Currently saved by hand as JSON, which is inconsistent (pending)
+- Bookmark system — maintain a list of things Jonny wants to learn more about, generated and updated during conversation. Should persist across sessions and be reviewable on demand (pending)

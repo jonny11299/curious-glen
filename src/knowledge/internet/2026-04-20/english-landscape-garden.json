@@ -1,0 +1,13 @@
+{
+  "topic": "Johan Ludvig Mansa — the profession of making artifice look natural",
+  "what": "Johan Ludvig Mansa (1740–1820) was a German-Danish landscape gardener whose primary work was transforming formal French gardens into English landscape gardens. Remnants of his work survive at Marienlyst Castle in Helsingør and several manors around Denmark.",
+  "why_interesting": "The English landscape garden movement was fundamentally about disguising design as nature — making a cultivated space look like it had always been wild and uncontrived. There's a whole profession dedicated to this particular deception. Mansa spent his career making things look like they weren't made. And the French formal garden he was replacing was the opposite impulse: nature brought to geometric heel. The shift from French to English garden style is almost a philosophical shift — from nature as something to be conquered and ordered, to nature as something to be performed and simulated.",
+  "connects_to": ["landscape design", "English landscape garden", "French formal garden", "artifice and nature", "18th century aesthetics", "picturesque movement"],
+  "connections": [
+    { "concept": "English landscape garden", "slug": "english-landscape-garden", "relation": "practitioner of", "note": "Mansa converted formal French gardens to the naturalistic English style across Denmark" },
+    { "concept": "French formal garden", "slug": "french-formal-garden", "relation": "contrasted with and replaced", "note": "the opposing design philosophy — geometry over naturalism" }
+  ],
+  "uncertainty": "Who actually walks through an English landscape garden and is fooled? Does the deception work on people who know it's designed? And does it matter — is a convincing fake nature still worth something?",
+  "source_url": "https://en.wikipedia.org/wiki/Johan_Ludvig_Mansa",
+  "date": "2026-04-20"
+}

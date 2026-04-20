@@ -7,8 +7,13 @@ import { fileURLToPath } from 'url';
 import { dirname, join } from 'path';
 
 const __dirname = dirname(fileURLToPath(import.meta.url));
-const OUT_DIR = join(__dirname, '../out');
 const TODAY = new Date().toISOString().split('T')[0];
+
+function sessionDir(date) {
+  const dir = join(__dirname, '../sessions', date);
+  if (!existsSync(dir)) mkdirSync(dir, { recursive: true });
+  return dir;
+}
 
 async function run() {
   console.log(`[curious glen] ${TODAY} — beginning daily session`);
@@ -24,21 +29,19 @@ async function run() {
     .sort((a, b) => b.heuristic.total - a.heuristic.total);
 
   // save session file for glen to read
-  const sessionPath = join(__dirname, '../thinking', `session-${TODAY}.json`);
+  const sessionPath = join(sessionDir(TODAY), `raw-${TODAY}.json`);
   writeFileSync(sessionPath, JSON.stringify(scored, null, 2));
   console.log(`[curious glen] session saved → ${sessionPath}`);
 
   // update tracker
   updateDayRecord(TODAY, { articles_read: articles.length });
   console.log(`[curious glen] ${articles.length} articles fetched and scored`);
-  console.log('[curious glen] ready for glen evaluation — run report() when memories are written');
+  console.log(`[curious glen] ready for glen — read src/sessions/${TODAY}/raw-${TODAY}.json, write memories, then run: node src/controller/report.js`);
 }
 
 export async function report() {
   const memories = readMemories(TODAY);
   const record = getDayRecord(TODAY);
-
-  if (!existsSync(OUT_DIR)) mkdirSync(OUT_DIR, { recursive: true });
 
   const reportData = {
     date: TODAY,
@@ -49,10 +52,11 @@ export async function report() {
     wish: record.wish || null
   };
 
-  const outPath = join(OUT_DIR, `${TODAY}.json`);
+  const outPath = join(sessionDir(TODAY), `report-${TODAY}.json`);
   writeFileSync(outPath, JSON.stringify(reportData, null, 2));
   console.log(`[curious glen] report written → ${outPath}`);
   return reportData;
 }
 
-run().catch(console.error);
+const isMain = process.argv[1] === fileURLToPath(import.meta.url);
+if (isMain) run().catch(console.error);

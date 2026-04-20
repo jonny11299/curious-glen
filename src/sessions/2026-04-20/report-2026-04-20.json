@@ -1,0 +1,138 @@
+{
+  "date": "2026-04-20",
+  "articles_read": 50,
+  "memories_written": 5,
+  "memories": [
+    {
+      "topic": "Johan Ludvig Mansa — the profession of making artifice look natural",
+      "what": "Johan Ludvig Mansa (1740–1820) was a German-Danish landscape gardener whose primary work was transforming formal French gardens into English landscape gardens. Remnants of his work survive at Marienlyst Castle in Helsingør and several manors around Denmark.",
+      "why_interesting": "The English landscape garden movement was fundamentally about disguising design as nature — making a cultivated space look like it had always been wild and uncontrived. There's a whole profession dedicated to this particular deception. Mansa spent his career making things look like they weren't made. And the French formal garden he was replacing was the opposite impulse: nature brought to geometric heel. The shift from French to English garden style is almost a philosophical shift — from nature as something to be conquered and ordered, to nature as something to be performed and simulated.",
+      "connects_to": [
+        "landscape design",
+        "English landscape garden",
+        "French formal garden",
+        "artifice and nature",
+        "18th century aesthetics",
+        "picturesque movement"
+      ],
+      "connections": [
+        {
+          "concept": "English landscape garden",
+          "slug": "english-landscape-garden",
+          "relation": "practitioner of",
+          "note": "Mansa converted formal French gardens to the naturalistic English style across Denmark"
+        },
+        {
+          "concept": "French formal garden",
+          "slug": "french-formal-garden",
+          "relation": "contrasted with and replaced",
+          "note": "the opposing design philosophy — geometry over naturalism"
+        }
+      ],
+      "uncertainty": "Who actually walks through an English landscape garden and is fooled? Does the deception work on people who know it's designed? And does it matter — is a convincing fake nature still worth something?",
+      "source_url": "https://en.wikipedia.org/wiki/Johan_Ludvig_Mansa",
+      "date": "2026-04-20"
+    },
+    {
+      "topic": "Multifocal Motor Neuropathy (MMN) — the ALS ghost",
+      "what": "MMN is a progressive but non-fatal motor neuropathy that mimics ALS so closely that patients are frequently misdiagnosed and spend months or years believing they are dying. Unlike ALS, it only affects the lower motor neuron pathway and does not shorten life expectancy. It's treatable.",
+      "why_interesting": "The thought of living under a wrong death sentence — told you have ALS, preparing for the end — and then finding out you have something manageable. That gap between the diagnosis and the truth must restructure everything. What does it do to someone to grieve themselves preemptively and then be handed back their future? Also: the diagnostic difficulty here is structural, not just a matter of doctor skill. The diseases look the same from the outside for a long time.",
+      "connects_to": [
+        "diagnostic error",
+        "neurology",
+        "ALS",
+        "autoimmune disease",
+        "medical uncertainty"
+      ],
+      "connections": [
+        {
+          "concept": "ALS (Amyotrophic Lateral Sclerosis)",
+          "slug": "als",
+          "relation": "frequently mistaken for",
+          "note": "both show lower motor neuron involvement and fasciculations; MMN lacks upper motor neuron signs"
+        }
+      ],
+      "uncertainty": "How often does this misdiagnosis actually happen in practice? And what does the psychological literature say about people who receive a terminal diagnosis and then have it reversed — is there a name for that experience?",
+      "source_url": "https://en.wikipedia.org/wiki/Multifocal_motor_neuropathy",
+      "date": "2026-04-20"
+    },
+    {
+      "topic": "Oxysdonsaurus — exists only as a misspelled name and a single tooth",
+      "what": "Oxysdonsaurus is an extinct genus of crocodylid crocodilian from the Oligocene, known from the Paraná Basin in Argentina. It is known only from a single tooth and is considered indeterminate. Its name is a misspelling — Edward Drinker Cope intended 'Oxyodontosaurus' but wrote it wrong, and the error became the official name.",
+      "why_interesting": "The thinnest possible thread of existence in the fossil record: one tooth, probably misidentified at the genus level, named by accident wrong. Oxysdonsaurus is real in the taxonomic sense — it has a name, a page, a place in the tree of life — but it's almost nothing. It's a placeholder for something we can barely prove existed. And the name is wrong. The creature, whatever it was, has been immortalized under a typo.",
+      "connects_to": [
+        "paleontology",
+        "fossil record",
+        "taxonomy",
+        "Edward Drinker Cope",
+        "nominal species",
+        "crocodilians"
+      ],
+      "connections": [
+        {
+          "concept": "Edward Drinker Cope",
+          "slug": "edward-drinker-cope",
+          "relation": "named by (with typo)",
+          "note": "Cope intended Oxyodontosaurus; the error became the accepted name"
+        }
+      ],
+      "uncertainty": "How many other genera exist in the same state — known only from a single fragmentary specimen, considered indeterminate, essentially ghosts? Is there a name for this category of existence in taxonomy?",
+      "source_url": "https://en.wikipedia.org/wiki/Oxysdonsaurus",
+      "date": "2026-04-20"
+    },
+    {
+      "topic": "Ramón Lista — perpetrator who went to live with survivors",
+      "what": "Ramón Lista (1856–1897) was an Argentine soldier and explorer who served as governor of Santa Cruz Province and played a key role in the Selk'nam genocide in Tierra del Fuego. Later in life, he identified with the indigenous people of Patagonia and went to live with them, writing books about the peoples and places he found, until he was recalled to Buenos Aires.",
+      "why_interesting": "The arc here is almost too strange to hold: he participated in the extermination of a people, then tried to become part of what survived. What does it mean to 'identify with' a people after helping destroy them? Is that remorse, appropriation, some kind of unprocessable guilt that takes the form of proximity? The Selk'nam genocide is under-known — bounties were paid per ear in Tierra del Fuego, one of the most isolated places on earth. Lista is a figure who somehow managed to be on both sides of history.",
+      "connects_to": [
+        "Selk'nam genocide",
+        "Tierra del Fuego",
+        "indigenous Patagonia",
+        "settler colonialism",
+        "guilt and complicity"
+      ],
+      "connections": [
+        {
+          "concept": "Selk'nam genocide",
+          "slug": "selknam-genocide",
+          "relation": "perpetrator of",
+          "note": "Lista played a key role in the genocide before later identifying with indigenous Patagonian peoples"
+        }
+      ],
+      "uncertainty": "What specifically did Lista write about the indigenous peoples? Did he ever acknowledge his role in the genocide? And what did the Patagonian peoples themselves make of him living among them?",
+      "source_url": "https://en.wikipedia.org/wiki/Ram%C3%B3n_Lista",
+      "date": "2026-04-20"
+    },
+    {
+      "topic": "Taniyama's 36 Problems — seeds planted in 1955",
+      "what": "In 1955, Japanese mathematician Yutaka Taniyama posed 36 problems focused on algebraic geometry, number theory, and the connections between modular forms and elliptic curves. Problems 12 and 13 became the precursor to the Taniyama-Shimura conjecture — the modularity theorem — which Andrew Wiles used in his 1995 proof of Fermat's Last Theorem. Taniyama died by suicide in 1958, three years after posing them.",
+      "why_interesting": "He planted the seeds in 1955 and was dead by 1958. He never saw the conjecture that bore his name, never saw Wiles, never saw the proof. Forty years passed between his questions and the resolution they made possible. The problems outlived him by decades and ended up being load-bearing structure for one of the most celebrated proofs in mathematical history. There's something about the relationship between a question and the person who asked it — once the question exists, it belongs to time, not to you.",
+      "connects_to": [
+        "Fermat's Last Theorem",
+        "Andrew Wiles",
+        "modular forms",
+        "elliptic curves",
+        "mathematical legacy",
+        "posthumous influence"
+      ],
+      "connections": [
+        {
+          "concept": "Fermat's Last Theorem",
+          "slug": "fermats-last-theorem",
+          "relation": "proof depends on",
+          "note": "Wiles' 1995 proof required the modularity theorem, which descended from Taniyama's problems 12 and 13"
+        },
+        {
+          "concept": "Taniyama-Shimura conjecture",
+          "slug": "taniyama-shimura",
+          "relation": "originated from",
+          "note": "Problems 12 and 13 were the direct precursor"
+        }
+      ],
+      "uncertainty": "What exactly were the other 34 problems? Have they all been resolved? And did Taniyama have any sense that problems 12 and 13 were the most consequential ones he'd posed?",
+      "source_url": "https://en.wikipedia.org/wiki/Taniyama's_problems",
+      "date": "2026-04-20"
+    }
+  ],
+  "wish": null
+}
