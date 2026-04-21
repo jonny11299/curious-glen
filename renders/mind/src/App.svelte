@@ -16,7 +16,7 @@
   };
 
   function handleKeydown(e) {
-    console.log(e);
+    if (e.target.tagName === 'INPUT') return;
     if (viewKeys[e.key]) {
       currentView.set(viewKeys[e.key]);
       return;

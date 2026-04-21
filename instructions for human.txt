@@ -3,6 +3,22 @@ INSTRUCTIONS FOR HUMAN
 
 HOW TO SIMULATE A DAY OF THINKING
 -----------------------------------
+
+0. Quick-launch: 
+	a) Double-click on start-glen.command
+	b) Open the server listed to view the articles fetched
+	c) Tell a Claude instance in the "curious\ glen" directory, "let's talk about today"
+
+
+Current:
+1. User should double-click on `start-glen.command`
+2. User should tell an instance of claude in the "curious glen" directory, "Let's talk about today".
+3. We talk in this window
+4. User manually pastes the conversation transcript into `src/sessions/{date}/conversation-{date}.md` when done
+
+
+
+v0.1 instructions:
 1. Open a terminal and run:
 
      cd "/Users/jonny/Desktop/claude code/curiosities/curious glen"
@@ -23,6 +39,20 @@ HOW TO SIMULATE A DAY OF THINKING
 4. Remember to give Glen one wish towards the end of the session.
 
 
+
+
+HOW TO PEER INTO GLEN'S MIND
+-----------------------------------
+
+cd renders/mind
+npm run dev
+
+This boots the mind viewer, which is a read-only access point
+for looking into the saved memory files.
+
+
+
+
 DIRECTORY GUIDE
 ---------------
   neurochemistry/   constants (N = articles/day, T = token budget)
@@ -36,13 +66,3 @@ DIRECTORY GUIDE
 
 
 
-
-
-HOW TO PEER INTO GLEN'S MIND
------------------------------------
-
-cd renders/mind
-pm run dev
-
-This boots the mind viewer, which is a read-only access point
-for looking into the saved memory files.

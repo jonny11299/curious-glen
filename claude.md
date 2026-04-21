@@ -31,12 +31,11 @@ Please see your surrounding directory for info about how to organize this.
 ## How this works in practice
 
 ### Running a day
-The preferred way is the session UI:
-1. `cd renders/converse && node server.js` — starts the session server
-2. Open `http://localhost:3000/dailysesh.html`
-3. Click "start today's session" — fetches articles, Glen reads and writes memories, report and graph are compiled automatically
-4. Talk with Jonny in the same window
-5. Paste the conversation transcript into `src/sessions/{date}/conversation-{date}.md` when done
+The preferred way is through `start-glen.command`
+1. User should double-click on `start-glen.command`
+2. User should tell an instance of claude in the "curious glen" directory, "Let's talk about today".
+3. We talk in this window
+4. User manually pastes the conversation transcript into `src/sessions/{date}/conversation-{date}.md` when done
 
 Manual fallback (if the server isn't running):
 1. `node src/controller/index.js` — fetches articles → `src/sessions/{date}/raw-{date}.json`

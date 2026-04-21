@@ -9,12 +9,6 @@
   let nodeList = [];
   let selectedIndex = 0;
 
-  onMount(async () => {
-    graph = await getGraph();
-    nodeList = Object.entries(graph.nodes).map(([slug, node]) => ({ slug, ...node }));
-    loading = false;
-  });
-
   $: filtered = search
     ? nodeList.filter(n => n.label.toLowerCase().includes(search.toLowerCase()))
     : nodeList;
@@ -40,14 +34,20 @@
     selectedIndex = Math.floor(Math.random() * filtered.length);
   }
 
-  const unsub = keypress.subscribe(kp => {
-    if (!kp) return;
-    if (kp.key === 'ArrowUp')   up();
-    if (kp.key === 'ArrowDown') down();
-    if (kp.key === ' ')         random();
+  let unsub;
+  onMount(async () => {
+    graph = await getGraph();
+    nodeList = Object.entries(graph.nodes).map(([slug, node]) => ({ slug, ...node }));
+    loading = false;
+    unsub = keypress.subscribe(kp => {
+      if (!kp) return;
+      if (kp.key === 'ArrowUp')   up();
+      if (kp.key === 'ArrowDown') down();
+      if (kp.key === ' ')         random();
+    });
   });
 
-  onDestroy(unsub);
+  onDestroy(() => unsub?.());
 </script>
 
 <div class="view">
