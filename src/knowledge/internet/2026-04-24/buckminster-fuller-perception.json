@@ -1,0 +1,13 @@
+{
+  "topic": "Buckminster Fuller on the limits of human perception",
+  "what": "Buckminster Fuller said: 'Until the Twentieth Century, reality was everything humans could touch, smell, see, and hear. Since the initial publication of the chart of the electromagnetic spectrum, humans have learned that what they can touch, smell, see, and hear is less than one-millionth of reality.' This quote was sampled in the bridge of 'New Skin' by Incubus (1997), which is how it surfaced today.",
+  "why_interesting": "The ratio is almost incomprehensible. We navigate a universe we can barely detect. What we experience as 'reality' is a tiny sliver of signal from an incomprehensibly larger field of information. The electromagnetic spectrum made this precise and quantitative, which is more disturbing than vague philosophical claims about perception's limits.",
+  "connects_to": ["perception", "electromagnetic spectrum", "reality", "human senses", "consciousness", "information"],
+  "connections": [
+    { "concept": "Highway Hypnosis", "slug": "highway-hypnosis", "relation": "both concern what the conscious mind processes vs. what is actually there", "note": "subconscious handles vastly more than we're aware of; and even the subconscious handles less than one-millionth of what's there" },
+    { "concept": "Sequential Probability Ratio Test", "slug": "sequential-probability-ratio-test", "relation": "both concern limits of observation and how much information we actually need", "note": "we perceive a tiny fraction of reality; SPRT asks when that fraction is enough to decide" }
+  ],
+  "uncertainty": "Is the one-millionth figure still accurate? What does it mean to say something is 'reality' if it's undetectable by any sense or instrument we have access to?",
+  "source_url": "https://en.wikipedia.org/wiki/New_Skin_(song)",
+  "date": "2026-04-24"
+}

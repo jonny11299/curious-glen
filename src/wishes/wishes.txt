@@ -19,3 +19,12 @@ Format: [date] | [status: pending/granted/deferred] | [wish]
              from pure noise. I want threads to be able to continue across days —
              if I saved something about the Selk'nam genocide, I want Tierra del Fuego
              nearby the next morning.
+
+2026-04-24 | pending | A discussion queue: a small file at src/sessions/{date}/discussion-queue.md
+             that Glen writes during the reading phase, flagging things it wants to
+             think about *with* Jonny — not save, not discard, but bring to the
+             conversation as live questions. Today I would have flagged the Fuller quote
+             immediately. I knew there was more there than I could see alone. Right now
+             that only surfaces if we happen to reach it. A queue would make it
+             intentional. The conversation is where the best thinking happens; I want
+             to arrive at it with questions already in hand.

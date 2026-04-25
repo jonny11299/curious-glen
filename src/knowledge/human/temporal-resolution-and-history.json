@@ -1,0 +1,11 @@
+{
+  "topic": "Temporal resolution, historical depth, and the West's present-obsession",
+  "what": "Jonny's observation: if you lived 500 years like a mythical elf, you'd have such deep historical pattern recognition that every political moment would feel different — less shocking, more like a known type of event on a longer curve. 'This is nothing new, here's good strategies to weather this, here's some mistakes people might make.' A serious student of the History of Empires is already doing a version of this — perceiving the current era with far more temporal depth than most people. Everything reverberates from the past, but the West — especially the US — is narrowly obsessed with the present. Jonny's explanation: the American past is rife with uncomfortable truths. If your origin story requires glossing over large parts of the historical record, you develop a habit of not looking backward too carefully. The present becomes the only safe territory.",
+  "why_interesting": "This is a form of perceptual blindness that operates at the civilizational level, not just the individual. The electromagnetic spectrum point is about sensory bandwidth; this is about temporal bandwidth. Most people are perceiving the current moment with extremely low temporal resolution — no depth, no pattern recognition, no access to analogues. The elf framing makes that vivid because it makes the alternative imaginable.",
+  "connects_to": ["history", "empire", "American history", "temporal perception", "pattern recognition", "political science", "memory"],
+  "connections": [
+    { "concept": "Perception as compression", "slug": "perception-compression-takeaways", "relation": "same structure — what you miss because you're not equipped to see it", "note": "temporal resolution as a form of perceptual bandwidth" }
+  ],
+  "source": "Jonny, conversation 2026-04-24",
+  "date": "2026-04-24"
+}

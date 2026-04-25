@@ -1,0 +1,13 @@
+{
+  "topic": "Highway Hypnosis",
+  "what": "An altered mental state where a driver navigates lengthy distances and responds correctly to road conditions with no conscious recollection of doing so. The conscious mind is occupied elsewhere while the brain processes road information subconsciously. Also called 'white line fever.' In deep cases, auditory and visual distortions occur. It is a manifestation of automaticity — the ability to perform complex skilled actions without conscious awareness.",
+  "why_interesting": "It makes the question of what consciousness contributes to skilled action genuinely uncomfortable. The driving happens correctly — all the right decisions get made — without the conscious 'you' present. Which raises a hard question: where were you? And what exactly were you contributing? Most of the time we assume consciousness is doing the steering. Highway hypnosis suggests otherwise.",
+  "connects_to": ["automaticity", "consciousness", "subconscious processing", "skilled action", "attention", "dissociation"],
+  "connections": [
+    { "concept": "Automaticity", "slug": "automaticity", "relation": "highway hypnosis is a dramatic instance of automaticity", "note": "complex multi-step behavior executed without conscious awareness" },
+    { "concept": "Buckminster Fuller on perception", "slug": "buckminster-fuller-perception", "relation": "both concern what the conscious mind does vs. does not process", "note": "subconscious handles vastly more than we're aware of" }
+  ],
+  "uncertainty": "Is highway hypnosis the rule rather than the exception for skilled behavior? How much of what we think we're consciously doing is actually being handled at a lower level?",
+  "source_url": "https://en.wikipedia.org/wiki/Highway_hypnosis",
+  "date": "2026-04-24"
+}

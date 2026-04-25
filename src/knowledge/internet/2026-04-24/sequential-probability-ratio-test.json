@@ -1,0 +1,12 @@
+{
+  "topic": "Sequential Probability Ratio Test (SPRT)",
+  "what": "A statistical hypothesis test developed by Abraham Wald (later proven optimal by Wald and Jacob Wolfowitz) where you make decisions as data arrives, rather than waiting to collect all data first. Originally developed for quality control in manufacturing. Also applied to computerized adaptive testing — stopping a test when enough data has accumulated to make a confident decision about the test-taker.",
+  "why_interesting": "Most of how we think about evidence assumes you collect all the data first, then decide. SPRT inverts this — you're deciding as you go, and you stop the moment you know enough. There's something philosophically satisfying about that. It models how real judgment actually works: you don't wait for certainty, you act when the signal is clear enough. The mathematical proof that this is *optimal* is even more interesting — it's not just pragmatic, it's actually the best you can do.",
+  "connects_to": ["statistics", "decision-making", "hypothesis testing", "adaptive testing", "optimal stopping", "Bayesian reasoning"],
+  "connections": [
+    { "concept": "Buckminster Fuller on perception", "slug": "buckminster-fuller-perception", "relation": "both concern limits of observation and how much information is actually needed", "note": "we perceive a tiny fraction of reality; SPRT is about when that fraction suffices for a decision" }
+  ],
+  "uncertainty": "Is there a non-statistical analogy to SPRT in human judgment? Do people actually use something like this intuitively — stopping evidence-gathering when the signal crosses a threshold?",
+  "source_url": "https://en.wikipedia.org/wiki/Sequential_probability_ratio_test",
+  "date": "2026-04-24"
+}

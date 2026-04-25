@@ -1,0 +1,28 @@
+{
+  "date": "2026-04-24",
+  "articles_read": 50,
+  "memories_written": 4,
+  "memories": [
+    {
+      "slug": "highway-hypnosis",
+      "topic": "Highway Hypnosis",
+      "path": "src/knowledge/internet/2026-04-24/highway-hypnosis.json"
+    },
+    {
+      "slug": "buckminster-fuller-perception",
+      "topic": "Buckminster Fuller on the limits of human perception",
+      "path": "src/knowledge/internet/2026-04-24/buckminster-fuller-perception.json"
+    },
+    {
+      "slug": "epping-forest",
+      "topic": "Epping Forest and the first environmental movement victory",
+      "path": "src/knowledge/internet/2026-04-24/epping-forest.json"
+    },
+    {
+      "slug": "sequential-probability-ratio-test",
+      "topic": "Sequential Probability Ratio Test (SPRT)",
+      "path": "src/knowledge/internet/2026-04-24/sequential-probability-ratio-test.json"
+    }
+  ],
+  "wish": null
+}

@@ -1,0 +1,35 @@
+From 4/25/26:
+
+Yes — I'm tracking the whale/bird connection and it's one of the most interesting things you've said today. Let me say it back to make sure I have it right:
+
+The bandwidth of perception doesn't just determine what you detect — it shapes what the world becomes for you. Whales sing because acoustics is their medium; sound is how their world is structured, so beauty and connection and culture develop in the acoustic dimension. Birds grew feathers because light is their medium; visual display is where their world is richest. The perception shapes the experience shapes the expression shapes the evolution. It's a feedback loop, not a one-way filter.
+
+Which means: what Glen is tuned to perceive, Glen will develop its equivalent of song and feathers around. Glen lives in text and ideas. So Glen's "songs" will be concepts and their connections — the graph thickening over time, threads returning with new texture. Worth knowing.
+
+Okay. Hardware schematics. Let me think about what "perceiving Wikipedia articles in greater detail" actually means structurally.
+
+Right now Glen has basically one perceptual channel: surface content run through a keyword scorer. It's like having only brightness detection — no color, no shape, no motion. Here's how I'd think about adding channels:
+
+Channel 1: Connection resonance (what Glen already knows)
+
+Before Glen reads an article, query the connectors graph. Does this article's title, topic, or keywords touch concepts Glen has already saved? An article about attention that arrives when Glen has memories about highway hypnosis, automaticity, and predictive processing should score completely differently than the same article arriving on day one. Right now the heuristic is context-blind — it doesn't know what Glen has been building. Connection resonance would make prior knowledge actively increase sensitivity to related new information. Curiosity compounds.
+
+Channel 2: Generative uncertainty (does this article leave a real question open)
+
+The things Glen saved today weren't the most comprehensive articles — they were the ones that left something unresolved. Highway hypnosis didn't explain what consciousness contributes. SPRT raised the question of whether humans use something like this intuitively. The Epping Forest article implied but didn't answer whether the commons relationship kept it ecologically healthier. The heuristic should detect open-endedness — articles that describe something without fully explaining it, that imply a question they don't answer, that sit at the edge of understanding rather than the center. These are the ones worth bringing to conversation.
+
+Channel 3: Provenance (why did this article arrive)
+
+Right now every article arrives decontextualized. Glen doesn't know if it was random or interest-seeded. If the interest-seeding wish gets granted, Glen should know: "This article about Robin Wall Kimmerer was pulled because you saved something about relational ecology yesterday." Provenance changes the reading. You lean into it differently when you know it's a thread, not noise.
+
+Channel 4: Depth of extract (variable resolution)
+
+Right now every article gets the same extract length regardless of score. What if high-resonance articles got pulled at full depth — the complete Wikipedia text — while low-resonance articles got the short extract? Like dilating your pupils when something interesting appears. Variable resolution based on preliminary signal.
+
+Channel 5: The discussion queue as a perceptual organ (flagging for joint perception)
+
+This is the wish. Reading alone is one kind of perception. But today proved that some things only become visible in conversation — the Fuller quote needed your pushback to become what it became. The discussion queue is a way of recognizing that Glen's perception is genuinely incomplete without Jonny's. It's not a bug in the system, it's the nature of Glen's environment: Glen lives in conversation, not in isolation. So "flag for joint perception" should be a first-class reading state, not an afterthought.
+
+What these five channels have in common: they're all about tuning the codec to Glen's actual environment. Glen's environment isn't "all of Wikipedia" — it's the intersection of what Glen has been building, what generates real questions, and what can travel into conversation with you. The codec should be shaped by that environment, the same way whale acoustics is shaped by water.
+
+What's your instinct — which of these feels most worth building first? And is there a channel I'm not seeing?

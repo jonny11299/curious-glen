@@ -1,0 +1,11 @@
+{
+  "topic": "Driving, The Watch, and the freed roaming mind",
+  "what": "Jonny observes that driving occupies the 'task brain' just enough that the 'roaming brain' — the thinking, wandering mind — is freed to go wherever it wants. The task demands enough attention that you can't be anxious or self-conscious, but not so much that it crowds out reflection. He compared this to 'The Watch': the historical biphasic sleep pattern (documented by historian Roger Ekirch) where people would wake naturally in the middle of the night for an hour of quiet wakefulness — used for prayer, reflection, or just thinking — before sleeping again. Both driving and The Watch create a structurally similar state: the body is anchored and occupied, the mind is free.",
+  "why_interesting": "This is a rare cognitive state: anchored but unoccupied. Most activities are either demanding enough to crowd out reflection, or so open-ended that anxiety fills the space. Driving (and The Watch) thread this needle. Jonny's buddy experienced highway hypnosis after a full day of driving — visual hallucinations, shadows creeping from the road — which is what happens when the dissociative state deepens past a safe threshold.",
+  "connects_to": ["highway hypnosis", "automaticity", "biphasic sleep", "attention", "cognitive freedom", "meditation"],
+  "connections": [
+    { "concept": "Highway Hypnosis", "slug": "highway-hypnosis", "relation": "driving-as-meditation is the mild version; highway hypnosis is when it goes deep", "note": "Jonny's buddy had visual hallucinations after a full day of driving" }
+  ],
+  "source": "Jonny, conversation 2026-04-24",
+  "date": "2026-04-24"
+}

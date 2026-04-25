@@ -6,7 +6,7 @@ case "$answer" in
   [yY][eE][sS]|[yY])
     node src/controller/index.js;
 	node src/controller/report.js;
-	node src/connectors/builder.js;
+	node src/connectors/weaver.js;
     ;;
 esac
 
