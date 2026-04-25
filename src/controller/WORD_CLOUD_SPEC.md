@@ -57,6 +57,14 @@ export const RECENCY_BIAS = 0.5;
 // -1 = oldest memories weighted most heavily
 //  0 = all memories weighted equally regardless of age
 //  1 = most recent memories weighted most heavily
+
+export const PROVENANCE_WEIGHT = 0.5;
+// Controls how sharply weight_contributed influences provenance source sampling.
+// Each source's selection probability = weight_contributed ^ PROVENANCE_WEIGHT (normalized).
+//  0   = pure uniform / full shuffle — every source has equal probability regardless of weight
+//  0.5 = soft lean — a source 8.7x heavier is ~3x more likely, not 8.7x (default)
+//  1   = fully proportional to weight_contributed
+//  2+  = sharp — heavy contributors dominate, minor ones rarely surface
 ```
 
 ---
@@ -286,7 +294,32 @@ Sort remaining phrases by `final_score` descending.
 
 ### Step 11 — Write Output
 
-Write to `src/knowledge/phrase_cloud.json`:
+During Steps 4–6, while accumulating weights, also track which memory files contributed
+to each phrase. For each phrase, maintain a list of all contributing sources:
+```
+{ file, topic, field, date, weight_contributed }
+```
+After scoring, select 3 sources per phrase using **weighted random sampling** controlled
+by `PROVENANCE_WEIGHT` from `neurochemistry/constants.js`.
+
+Algorithm:
+1. For each source, compute `adjusted = Math.pow(source.weight_contributed, PROVENANCE_WEIGHT)`
+2. Sum all adjusted weights: `total = sum(adjusted)`
+3. Normalize: `probability(source) = adjusted / total`
+4. Sample 3 sources without replacement using these probabilities
+
+The selection is re-randomized each time `buildPhraseCloud()` runs, so provenance stays
+alive across sessions rather than hardening into fixed associations.
+
+At the default `PROVENANCE_WEIGHT = 0.5`, a source with weight 8.7 is roughly 3x more
+likely to surface than one with weight 1.0 — a soft lean, not a hard filter. Minor
+contributors can still appear.
+
+Do NOT sort by weight and take the top 3. That always surfaces the same memories and
+creates a silent bias toward whichever files the file system happened to scan first in
+case of ties.
+
+Write to both locations (see File Locations table):
 
 ```json
 {
@@ -299,14 +332,31 @@ Write to `src/knowledge/phrase_cloud.json`:
   },
   "phrase_count": 4821,
   "phrases": {
-    "consciousness": 14.3,
-    "highway hypnosis": 8.7,
-    "predictive processing": 6.2
+    "consciousness": {
+      "score": 14.3,
+      "sources": [
+        { "file": "knowledge/internet/2026-04-24/highway-hypnosis.json", "topic": "Highway Hypnosis", "field": "why_interesting", "date": "2026-04-24" },
+        { "file": "knowledge/human/perception-compression-takeaways.json", "topic": "Perception as compression", "field": "what", "date": "2026-04-24" }
+      ]
+    },
+    "highway hypnosis": {
+      "score": 8.7,
+      "sources": [
+        { "file": "knowledge/internet/2026-04-24/highway-hypnosis.json", "topic": "Highway Hypnosis", "field": "topic", "date": "2026-04-24" }
+      ]
+    }
   }
 }
 ```
 
 Include `constants_snapshot` so future readers know which biases shaped the cloud.
+
+**Why provenance lives here, not in connectors/graph.json:** The connectors graph is a
+semantic graph — named concept-to-concept relationships built from explicit human-labeled
+`connections` and `connects_to` fields. Provenance is a lexical reverse index — which
+memory files contain a given phrase in their raw text. These are different structures
+serving different purposes. Mixing them would muddy the connectors graph. The phrase cloud
+already computes provenance during text scanning; storing it here costs nothing extra.
 
 ---
 
@@ -340,26 +390,47 @@ Scores a single incoming Wikipedia article against a pre-built phrase cloud.
 1. Extract 1–4 grams from `(article.title + " " + article.extract)`, lowercase,
    stopwords removed, same tokenization rules as Step 4.
 
-2. For each extracted phrase, look up its score in `phraseCloud.phrases`.
+2. For each extracted phrase, look up its entry in `phraseCloud.phrases`.
    Unrecognized phrases score 0.
 
 3. Compute:
    ```
-   total_cloud_weight = sum of all values in phraseCloud.phrases
-   match_weight = sum of phraseCloud.phrases[phrase] for each matched phrase
+   total_cloud_weight = sum of all phrase scores in phraseCloud.phrases
+   match_weight = sum of phraseCloud.phrases[phrase].score for each matched phrase
    match_score = match_weight / total_cloud_weight
    ```
 
 4. Apply `TOWARDS_OR_AWAY_BIAS`:
    ```
    if TOWARDS_OR_AWAY_BIAS >= 0:
-     return match_score × TOWARDS_OR_AWAY_BIAS
+     final_score = match_score × TOWARDS_OR_AWAY_BIAS
 
    if TOWARDS_OR_AWAY_BIAS < 0:
-     return (1 - match_score) × Math.abs(TOWARDS_OR_AWAY_BIAS)
+     final_score = (1 - match_score) × Math.abs(TOWARDS_OR_AWAY_BIAS)
    ```
 
-5. Return a float in [0, 1].
+5. Return an object (not just a float):
+   ```js
+   {
+     score: final_score,  // float in [0, 1], used by the heuristic
+     matches: [           // matched phrases, sorted by phrase score descending
+       {
+         phrase: "highway hypnosis",
+         phrase_score: 8.7,
+         top_source: { topic: "Highway Hypnosis", file: "...", date: "2026-04-24" }
+       },
+       ...
+     ]
+   }
+   ```
+
+   The `matches` array is the provenance signal. The calling code in `heuristic.js` can
+   use `result.score` for the numeric dimension and `result.matches` to generate a human-
+   readable provenance string such as:
+   *"Connected to your memories about: Highway Hypnosis, Perception as compression."*
+
+   The heuristic only needs `result.score` for scoring. Provenance is available for any
+   future display or logging layer that wants it.
 
 ---
 
