@@ -17,6 +17,8 @@ export function scoreArticle(article, heuristics) {
     scores[dimension] = (hits.length / config.keywords.length) * config.weight;
   }
 
-  const total = Object.values(scores).reduce((a, b) => a + b, 0) / Object.keys(scores).length;
-  return { scores, total: parseFloat(total.toFixed(4)) };
+  const wordCount = text.split(/\s+/).filter(Boolean).length;
+  const raw = Object.values(scores).reduce((a, b) => a + b, 0) / Object.keys(scores).length;
+  const total = raw / Math.pow(Math.max(wordCount, 1), 0.9);
+  return { scores, total: parseFloat(total.toFixed(6)) };
 }

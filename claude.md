@@ -38,13 +38,13 @@ The preferred way is through `start-glen.command`
 4. User manually pastes the conversation transcript into `src/sessions/{date}/conversation-{date}.md` when done
 
 Manual fallback (if the server isn't running):
-1. `node src/loop/run.js` — fetches articles → `src/sessions/{date}/raw-{date}.json`
-2. Glen reads the raw session and writes memories to `src/knowledge/internet/{date}/`
+1. `node src/loop/run.js` — fetches N articles → deep-dives top DD → writes `src/sessions/{date}/raw-{date}.json` (all N) and `src/sessions/{date}/filtered-{date}.json` (top I, with `depth` field)
+2. Glen reads the **filtered** session and writes memories to `src/knowledge/internet/{date}/`
 3. `node src/loop/report.js` — compiles → `src/sessions/{date}/report-{date}.json`
 4. `node src/connections/weaver.js` — rebuilds the concept graph
 
 ### When Jonny says "let's talk about today"
-Read `src/sessions/{date}/report-{date}.json` where `{date}` is today's date. That file contains all memories Glen wrote for the day. If the report doesn't exist yet, read the raw session at `src/sessions/{date}/raw-{date}.json` and any memory files in `src/knowledge/internet/{date}/`.
+Read `src/sessions/{date}/report-{date}.json` where `{date}` is today's date. That file contains all memories Glen wrote for the day. If the report doesn't exist yet, read the **filtered** session at `src/sessions/{date}/filtered-{date}.json` (top I articles scored by heuristic, depth-marked) and any memory files in `src/knowledge/internet/{date}/`. Do not read `raw-{date}.json` — it contains all N articles and is not meant for Glen.
 
 ### Naming philosophy
 The directory names are biological and cognitive metaphors — this is intentional and should be honored.

@@ -1,5 +1,16 @@
+### CLAUDE!! QUICK MESSAGE FROM JONNY, YOUR USER:
+
+Dude, this blueprint was built during an older version of the code... certain references may be out of date.
+
+Also, we should be building the word cloud BEFORE we run the heuristic in "run.js" Before this line:
+  const heuristics = loadHeuristics();
+
+So, the word cloud should actually be built immediately after running the fetcher.
+
+
+
 # Phrase Cloud Module — Implementation Spec
-`src/controller/word_cloud.js`
+`src/loop/word_cloud.js`
 
 This document is a complete handoff spec. An implementing agent should be able to build
 `word_cloud.js` by reading this document alone, without needing any prior context.
@@ -20,14 +31,14 @@ Glen's existing conceptual territory.
 
 | File | Purpose |
 |------|---------|
-| `src/controller/word_cloud.js` | Main module (to be created) |
-| `src/controller/stopwords.txt` | One stopword per line, lowercase (to be created) |
+| `src/loop/word_cloud.js` | Main module (to be created) |
+| `src/loop/stopwords.txt` | One stopword per line, lowercase (to be created) |
 | `src/knowledge/phrase_cloud.json` | Working output — overwritten each session; read by heuristic |
 | `src/sessions/{date}/phrase_cloud-{date}.json` | Daily snapshot — written once, never overwritten; for the user to observe Glen's vocabulary evolving over time |
 | `src/neurochemistry/constants.js` | Add new constants here |
 | `src/heuristic/weights.json` | Add `phrase_resonance` dimension here |
 | `src/heuristic/heuristic.js` | Call `scorePhraseCloud` inside `scoreArticle` here |
-| `src/controller/index.js` | Call `buildPhraseCloud(date)` here after memory writing |
+| `src/loop/run.js` | Call `buildPhraseCloud(date)` here after memory writing |
 
 ---
 
@@ -105,7 +116,7 @@ of the long tail; higher values produce a leaner, higher-confidence cloud. Tune 
 
 ## Stopwords
 
-Create `src/controller/stopwords.txt` with one word per line, lowercase.
+Create `src/loop/stopwords.txt` with one word per line, lowercase.
 Seed it with at minimum the following common English stopwords:
 
 ```
@@ -205,7 +216,7 @@ This accumulator is the weighted token frequency map for the whole knowledge bas
 
 ### Step 5 — Stopword Filtering
 
-Load `src/controller/stopwords.txt` into a Set at startup.
+Load `src/loop/stopwords.txt` into a Set at startup.
 During tokenization (Step 4), skip any token that:
 - Appears in the stopword Set
 - Is shorter than 3 characters after stripping punctuation
@@ -448,7 +459,7 @@ existing keyword dimensions. The implementing agent will need to handle it as a 
 case in `scoreArticle`.
 
 ### `src/heuristic/heuristic.js`
-- Import `scorePhraseCloud` from `../controller/word_cloud.js`
+- Import `scorePhraseCloud` from `../loop/word_cloud.js`
 - Load `phrase_cloud.json` once at startup (not per-article)
 - Inside `scoreArticle`, add:
   ```js
@@ -458,7 +469,7 @@ case in `scoreArticle`.
 - Handle the case where `phrase_cloud.json` does not yet exist (first run): skip the
   `phrase_resonance` dimension gracefully rather than crashing.
 
-### `src/controller/index.js`
+### `src/loop/run.js`
 - Import `buildPhraseCloud` from `./word_cloud.js`
 - Call `buildPhraseCloud()` after memory writing is complete and before the connectors
   graph rebuild (`node src/connectors/builder.js`)
