@@ -40,7 +40,7 @@ app.get('/api/memories', (req, res) => {
 });
 
 app.get('/api/graph', (req, res) => {
-  const graphPath = join(SRC, 'connectors/graph.json');
+  const graphPath = join(SRC, 'connections/graph.json');
   if (!existsSync(graphPath)) return res.json({ nodes: {}, edges: [] });
   res.json(JSON.parse(readFileSync(graphPath, 'utf8')));
 });

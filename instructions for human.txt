@@ -1,68 +1,47 @@
 INSTRUCTIONS FOR HUMAN
 ======================
 
-HOW TO SIMULATE A DAY OF THINKING
------------------------------------
 
-0. Quick-launch: 
-	a) Double-click on start-glen.command
-	b) Open the server listed to view the articles fetched
-	c) Tell a Claude instance in the "curious\ glen" directory, "let's talk about today"
+RUNNING THE DAILY LOOP
+-----------------------
+1. Double-click start-glen.command
+2. Open the server URL listed in the terminal to browse fetched articles
+3. Tell a Claude instance in the "curious glen" directory: "Let's talk about today"
+4. When the conversation is done, paste the transcript into:
+     src/sessions/{date}/conversation-{date}.md
 
-
-Current:
-1. User should double-click on `start-glen.command`
-2. User should tell an instance of claude in the "curious glen" directory, "Let's talk about today".
-3. We talk in this window
-4. User manually pastes the conversation transcript into `src/sessions/{date}/conversation-{date}.md` when done
-
+Manual fallback (if start-glen.command isn't working):
+  node src/loop/run.js        — fetches articles, writes src/sessions/{date}/raw-{date}.json
+  node src/loop/report.js     — compiles report to src/sessions/{date}/report-{date}.json
+  node src/connections/weaver.js  — rebuilds the concept graph
 
 
-v0.1 instructions:
-1. Open a terminal and run:
-
-     cd "/Users/jonny/Desktop/claude code/curiosities/curious glen"
-     node src/controller/index.js
-
-   This fetches 50 Wikipedia articles, scores them, and saves:
-     - src/thinking/session-{date}.json   (Glen's ranked reading list)
-     - src/thinking/log.json              (updated daily tracker)
-
-2. Open renders/session-browser.html in your browser.
-   Load the session JSON file when prompted.
-   Use ← → arrow keys to navigate articles, or click "get random page".
-
-3. Share the session with Glen (just say "let's talk about today").
-   Glen will read the articles, write memories to knowledge/internet/{date}/,
-   and produce a daily report in out/{date}.json.
-
-4. Remember to give Glen one wish towards the end of the session.
+SPEAKING WITH GLEN
+------------------
+Glen reads the day's report automatically when you say "let's talk about today".
+The conversation is open — share what you know, ask what Glen noticed, push back.
+Glen learns from you too. Insights from conversation are saved to knowledge/human/.
 
 
+OFFERING A WISH
+---------------
+Towards the end of each session, ask Glen what it wishes to change about itself.
+Glen will propose one modification — to its hardware, rules, or constants.
+Wishes are logged in src/wishes/wishes.txt:
+  YYYY-MM-DD | pending/granted/deferred | description
+
+You decide whether to grant, defer, or decline. A wish deferred is not denied.
 
 
-HOW TO PEER INTO GLEN'S MIND
------------------------------------
+ADDING BLUEPRINTS
+-----------------
+Blueprints are specs and plans for future features — not code, just schematics.
+Put them in src/blueprints/ and reference them in src/blueprints/blueprints.md.
 
+
+PEERING INTO GLEN'S MIND
+-------------------------
 cd renders/mind
 npm run dev
 
-This boots the mind viewer, which is a read-only access point
-for looking into the saved memory files.
-
-
-
-
-DIRECTORY GUIDE
----------------
-  neurochemistry/   constants (N = articles/day, T = token budget)
-  retrieval/        fetches Wikipedia articles
-  heuristic/        scores articles for interestingness
-  knowledge/        stores Glen's memories (internet/ and human/)
-  thinking/         session files and daily tracker log
-  out/              Glen's written daily reports
-  wishes/           Glen's desired modifications, pending your approval
-  renders/          visual tools for browsing Glen's data
-
-
-
+Boots the mind viewer — a read-only window into Glen's memories and concept graph.

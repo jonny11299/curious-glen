@@ -1,7 +1,7 @@
 import { fetchArticles } from '../retrieval/fetcher.js';
 import { loadHeuristics, scoreArticle } from '../heuristic/heuristic.js';
-import { readMemories } from '../knowledge/memory-writer.js';
-import { getDayRecord, updateDayRecord } from '../thinking/tracker.js';
+import { updateDayRecord } from './tracker.js';
+import { buildGraph } from '../connections/weaver.js';
 import { writeFileSync, mkdirSync, existsSync } from 'fs';
 import { fileURLToPath } from 'url';
 import { dirname, join } from 'path';
@@ -36,26 +36,12 @@ async function run() {
   // update tracker
   updateDayRecord(TODAY, { articles_read: articles.length });
   console.log(`[curious glen] ${articles.length} articles fetched and scored`);
-  console.log(`[curious glen] ready for glen — read src/sessions/${TODAY}/raw-${TODAY}.json, write memories, then run: node src/controller/report.js`);
-}
 
-export async function report() {
-  const memories = readMemories(TODAY);
-  const record = getDayRecord(TODAY);
+  // rebuild graph so current connections are fresh for the session
+  const graph = buildGraph();
+  console.log(`[curious glen] graph rebuilt — ${Object.keys(graph.nodes).length} nodes, ${graph.edges.length} edges`);
 
-  const reportData = {
-    date: TODAY,
-    articles_read: record.articles_read,
-    memories_written: memories.length,
-    tokens_spent: record.tokens_spent,
-    memories,
-    wish: record.wish || null
-  };
-
-  const outPath = join(sessionDir(TODAY), `report-${TODAY}.json`);
-  writeFileSync(outPath, JSON.stringify(reportData, null, 2));
-  console.log(`[curious glen] report written → ${outPath}`);
-  return reportData;
+  console.log(`[curious glen] ready — read src/sessions/${TODAY}/raw-${TODAY}.json, then: node src/loop/report.js`);
 }
 
 const isMain = process.argv[1] === fileURLToPath(import.meta.url);

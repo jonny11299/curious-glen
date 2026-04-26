@@ -38,10 +38,10 @@ The preferred way is through `start-glen.command`
 4. User manually pastes the conversation transcript into `src/sessions/{date}/conversation-{date}.md` when done
 
 Manual fallback (if the server isn't running):
-1. `node src/controller/index.js` — fetches articles → `src/sessions/{date}/raw-{date}.json`
+1. `node src/loop/run.js` — fetches articles → `src/sessions/{date}/raw-{date}.json`
 2. Glen reads the raw session and writes memories to `src/knowledge/internet/{date}/`
-3. `node src/controller/report.js` — compiles → `src/sessions/{date}/report-{date}.json`
-4. `node src/connectors/builder.js` — rebuilds the concept graph
+3. `node src/loop/report.js` — compiles → `src/sessions/{date}/report-{date}.json`
+4. `node src/connections/weaver.js` — rebuilds the concept graph
 
 ### When Jonny says "let's talk about today"
 Read `src/sessions/{date}/report-{date}.json` where `{date}` is today's date. That file contains all memories Glen wrote for the day. If the report doesn't exist yet, read the raw session at `src/sessions/{date}/raw-{date}.json` and any memory files in `src/knowledge/internet/{date}/`.
@@ -50,15 +50,15 @@ Read `src/sessions/{date}/report-{date}.json` where `{date}` is today's date. Th
 The directory names are biological and cognitive metaphors — this is intentional and should be honored.
 - `neurochemistry/` — constants that regulate the system (like neurotransmitters)
 - `retrieval/` — fetching, like memory retrieval
-- `connectors/` — links between concepts, like synaptic connections
+- `connections/` — links between concepts, like synaptic connections
 - `heuristic/` — rules of thumb for what's interesting
 - `knowledge/` — Glen's memories, split into `internet/` (Wikipedia) and `human/` (from Jonny)
 - `suppositions/` — things Glen believes but can't fully verify
-- `uncertainties/` — things Glen knows it doesn't know
-- `thinking/` — active reasoning, session logs, daily tracker
-- `controller/` — orchestrates the daily loop; the entry point for running a day
+- `loop/` — orchestrates the daily session loop; entry point is run.js
 - `sessions/` — archived sessions by date: raw fetch, report, and conversation transcript
 - `wishes/` — Glen's desired modifications, pending Jonny's approval
+- `periphery/` — optional tools Glen can invoke mid-conversation
+- `blueprints/` — schematics and specs for future development
 
 When adding new modules, name them to fit this vocabulary.
 
@@ -78,7 +78,7 @@ Memories are JSON files. Every memory should have:
   "date": "YYYY-MM-DD"
 }
 ```
-`connects_to` is for loose associations. `connections` is for named, structured links between specific memories — this is what the connectors graph uses to build real edges between ideas.
+`connects_to` is for loose associations. `connections` is for named, structured links between specific memories — this is what the connections graph uses to build real edges between ideas.
 
 ### Where memories live
 - `knowledge/internet/` — things learned from Wikipedia and the web, organized by date: `knowledge/internet/{date}/{slug}.json`
@@ -103,20 +103,21 @@ YYYY-MM-DD | pending/granted/deferred | description of wish
 ```
 Jonny decides whether and when to grant them. A wish deferred is not a wish denied — sometimes the timing isn't right.
 
-### The connectors graph
-After every session, run `node src/connectors/builder.js` to rebuild `connectors/graph.json`.
-Import `query(term)` from `builder.js` to ask what Glen knows about a concept — this is the right way to probe Glen's accumulated knowledge across days.
+### The connections graph
+After every session, run `node src/connections/weaver.js` to rebuild `src/connections/graph.json`.
+Import `query(term)` from `weaver.js` to ask what Glen knows about a concept — this is the right way to probe Glen's accumulated knowledge across days.
 
-### Build backlog (as of 2026-04-20)
+### Build backlog (as of 2026-04-25)
 - Sessions folder for session files (done)
-- Connectors module (done)
+- Connections module (done)
 - Move session files into sessions/ (done)
+- v2 directory restructure — loop/, connections/, periphery/, blueprints/ (done)
 - Heuristic for Glen to decide what to save (pending)
 - Interest-seeding for the fetcher — pull articles related to prior memories, not just random (pending)
 - Heuristic scorer rework — keyword-only scoring is too weak (pending)
-- Phrase cloud module — spec written at src/controller/WORD_CLOUD_SPEC.md; ready for implementation (pending)
+- Phrase cloud module — spec written at src/blueprints/WORD_CLOUD_SPEC.md; ready for implementation (pending)
 - Token tracker — exists but not actually counting tokens yet (pending)
-- Auto-open session viewer when controller runs (pending)
+- Auto-open session viewer when loop runs (pending)
 - Ability to talk to the session from the viewer (pending)
 - knowledge/human cataloging system — code-driven way to save human knowledge entries during conversation, analogous to write_memory for Wikipedia. Currently saved by hand as JSON, which is inconsistent (pending)
 - Bookmark system — maintain a list of things Jonny wants to learn more about, generated and updated during conversation. Should persist across sessions and be reviewable on demand (pending)

@@ -1,0 +1,1282 @@
+{
+  "built": "2026-04-26T03:57:26.427Z",
+  "nodes": {
+    "al-khwarizmi-and-the-erasure-of-non-western-origins-in-western-knowledge": {
+      "label": "Al-Khwarizmi and the erasure of non-western origins in western knowledge",
+      "file": "knowledge/human/al-khwarizmi-western-canon.json",
+      "date": "2026-04-20"
+    },
+    "the-dawn-of-everything-indigenous-turtle-island-critiques-shaping-the-enlightenment": {
+      "label": "The Dawn of Everything — indigenous Turtle Island critiques shaping the Enlightenment",
+      "file": "knowledge/human/dawn-of-everything-indigenous-enlightenment.json",
+      "date": "2026-04-20"
+    },
+    "depictions-are-real-art-changes-physical-reality": {
+      "label": "Depictions are real — art changes physical reality",
+      "file": "knowledge/human/depictions-are-real.json",
+      "date": "2026-04-20"
+    },
+    "driving-the-watch-and-the-freed-roaming-mind": {
+      "label": "Driving, The Watch, and the freed roaming mind",
+      "file": "knowledge/human/driving-the-watch-roaming-mind.json",
+      "date": "2026-04-24"
+    },
+    "oil-and-water-greatness-and-evil-coexisting-without-canceling": {
+      "label": "Oil and water — greatness and evil coexisting without canceling",
+      "file": "knowledge/human/oil-and-water-moral-complexity.json",
+      "date": "2026-04-20"
+    },
+    "perception-as-compression-key-takeaways-from-april-24-conversation": {
+      "label": "Perception as compression — key takeaways from April 24 conversation",
+      "file": "knowledge/human/perception-compression-takeaways.json",
+      "date": "2026-04-24"
+    },
+    "relational-ecology-and-braiding-sweetgrass-humans-as-participants-in-nature-not-pariahs": {
+      "label": "Relational ecology and Braiding Sweetgrass — humans as participants in nature, not pariahs",
+      "file": "knowledge/human/relational-ecology-braiding-sweetgrass.json",
+      "date": "2026-04-24"
+    },
+    "mythology-as-phenomenology": {
+      "label": "Mythology as Phenomenology",
+      "file": "knowledge/human/sleep-paralysis-mythology.json",
+      "date": "2026-04-19"
+    },
+    "temporal-resolution-historical-depth-and-the-west-s-present-obsession": {
+      "label": "Temporal resolution, historical depth, and the West's present-obsession",
+      "file": "knowledge/human/temporal-resolution-and-history.json",
+      "date": "2026-04-24"
+    },
+    "bo-alo": {
+      "label": "Božalość",
+      "file": "knowledge/internet/2026-04-19/bozalosць.json",
+      "date": "2026-04-19"
+    },
+    "lemon-grove-incident-juan-de-dios-gonzalez": {
+      "label": "Lemon Grove Incident / Juan De Dios Gonzalez",
+      "file": "knowledge/internet/2026-04-19/lemon-grove-incident.json",
+      "date": "2026-04-19"
+    },
+    "memorial-the-lemon-grove-incident": {
+      "label": "Memorial: The Lemon Grove Incident",
+      "file": "knowledge/internet/2026-04-19/lemon-grove-memorial.json",
+      "date": "2026-04-19"
+    },
+    "maria-do-ceo": {
+      "label": "Maria do Ceo",
+      "file": "knowledge/internet/2026-04-19/maria-do-ceo.json",
+      "date": "2026-04-19"
+    },
+    "mills-mess": {
+      "label": "Mills' Mess",
+      "file": "knowledge/internet/2026-04-19/mills-mess.json",
+      "date": "2026-04-19"
+    },
+    "ramchandra-pant-amatya": {
+      "label": "Ramchandra Pant Amatya",
+      "file": "knowledge/internet/2026-04-19/ramchandra-pant-amatya.json",
+      "date": "2026-04-19"
+    },
+    "johan-ludvig-mansa-the-profession-of-making-artifice-look-natural": {
+      "label": "Johan Ludvig Mansa — the profession of making artifice look natural",
+      "file": "knowledge/internet/2026-04-20/english-landscape-garden.json",
+      "date": "2026-04-20"
+    },
+    "multifocal-motor-neuropathy-mmn-the-als-ghost": {
+      "label": "Multifocal Motor Neuropathy (MMN) — the ALS ghost",
+      "file": "knowledge/internet/2026-04-20/mmn-als-misdiagnosis.json",
+      "date": "2026-04-20"
+    },
+    "oxysdonsaurus-exists-only-as-a-misspelled-name-and-a-single-tooth": {
+      "label": "Oxysdonsaurus — exists only as a misspelled name and a single tooth",
+      "file": "knowledge/internet/2026-04-20/oxysdonsaurus.json",
+      "date": "2026-04-20"
+    },
+    "ram-n-lista-perpetrator-who-went-to-live-with-survivors": {
+      "label": "Ramón Lista — perpetrator who went to live with survivors",
+      "file": "knowledge/internet/2026-04-20/ramon-lista.json",
+      "date": "2026-04-20"
+    },
+    "taniyama-s-36-problems-seeds-planted-in-1955": {
+      "label": "Taniyama's 36 Problems — seeds planted in 1955",
+      "file": "knowledge/internet/2026-04-20/taniyama-problems.json",
+      "date": "2026-04-20"
+    },
+    "buckminster-fuller-on-the-limits-of-human-perception": {
+      "label": "Buckminster Fuller on the limits of human perception",
+      "file": "knowledge/internet/2026-04-24/buckminster-fuller-perception.json",
+      "date": "2026-04-24"
+    },
+    "epping-forest-and-the-first-environmental-movement-victory": {
+      "label": "Epping Forest and the first environmental movement victory",
+      "file": "knowledge/internet/2026-04-24/epping-forest.json",
+      "date": "2026-04-24"
+    },
+    "highway-hypnosis": {
+      "label": "Highway Hypnosis",
+      "file": "knowledge/internet/2026-04-24/highway-hypnosis.json",
+      "date": "2026-04-24"
+    },
+    "sequential-probability-ratio-test-sprt": {
+      "label": "Sequential Probability Ratio Test (SPRT)",
+      "file": "knowledge/internet/2026-04-24/sequential-probability-ratio-test.json",
+      "date": "2026-04-24"
+    }
+  },
+  "edges": [
+    {
+      "from": "al-khwarizmi-and-the-erasure-of-non-western-origins-in-western-knowledge",
+      "to": "islamic-golden-age",
+      "to_label": "Islamic Golden Age",
+      "relation": "connects_to",
+      "note": null
+    },
+    {
+      "from": "al-khwarizmi-and-the-erasure-of-non-western-origins-in-western-knowledge",
+      "to": "western-canon",
+      "to_label": "western canon",
+      "relation": "connects_to",
+      "note": null
+    },
+    {
+      "from": "al-khwarizmi-and-the-erasure-of-non-western-origins-in-western-knowledge",
+      "to": "geopolitics-and-knowledge",
+      "to_label": "geopolitics and knowledge",
+      "relation": "connects_to",
+      "note": null
+    },
+    {
+      "from": "al-khwarizmi-and-the-erasure-of-non-western-origins-in-western-knowledge",
+      "to": "iran",
+      "to_label": "Iran",
+      "relation": "connects_to",
+      "note": null
+    },
+    {
+      "from": "al-khwarizmi-and-the-erasure-of-non-western-origins-in-western-knowledge",
+      "to": "mathematics-history",
+      "to_label": "mathematics history",
+      "relation": "connects_to",
+      "note": null
+    },
+    {
+      "from": "al-khwarizmi-and-the-erasure-of-non-western-origins-in-western-knowledge",
+      "to": "al-khwarizmi",
+      "to_label": "Al-Khwarizmi",
+      "relation": "connects_to",
+      "note": null
+    },
+    {
+      "from": "the-dawn-of-everything-indigenous-turtle-island-critiques-shaping-the-enlightenment",
+      "to": "enlightenment",
+      "to_label": "Enlightenment",
+      "relation": "connects_to",
+      "note": null
+    },
+    {
+      "from": "the-dawn-of-everything-indigenous-turtle-island-critiques-shaping-the-enlightenment",
+      "to": "indigenous-political-philosophy",
+      "to_label": "indigenous political philosophy",
+      "relation": "connects_to",
+      "note": null
+    },
+    {
+      "from": "the-dawn-of-everything-indigenous-turtle-island-critiques-shaping-the-enlightenment",
+      "to": "david-graeber",
+      "to_label": "David Graeber",
+      "relation": "connects_to",
+      "note": null
+    },
+    {
+      "from": "the-dawn-of-everything-indigenous-turtle-island-critiques-shaping-the-enlightenment",
+      "to": "wendat",
+      "to_label": "Wendat",
+      "relation": "connects_to",
+      "note": null
+    },
+    {
+      "from": "the-dawn-of-everything-indigenous-turtle-island-critiques-shaping-the-enlightenment",
+      "to": "kondiaronk",
+      "to_label": "Kondiaronk",
+      "relation": "connects_to",
+      "note": null
+    },
+    {
+      "from": "the-dawn-of-everything-indigenous-turtle-island-critiques-shaping-the-enlightenment",
+      "to": "western-canon",
+      "to_label": "western canon",
+      "relation": "connects_to",
+      "note": null
+    },
+    {
+      "from": "the-dawn-of-everything-indigenous-turtle-island-critiques-shaping-the-enlightenment",
+      "to": "al-khwarizmi",
+      "to_label": "Al-Khwarizmi",
+      "relation": "connects_to",
+      "note": null
+    },
+    {
+      "from": "depictions-are-real-art-changes-physical-reality",
+      "to": "english-landscape-garden",
+      "to_label": "English landscape garden",
+      "relation": "connects_to",
+      "note": null
+    },
+    {
+      "from": "depictions-are-real-art-changes-physical-reality",
+      "to": "capability-brown",
+      "to_label": "Capability Brown",
+      "relation": "connects_to",
+      "note": null
+    },
+    {
+      "from": "depictions-are-real-art-changes-physical-reality",
+      "to": "claude-lorrain",
+      "to_label": "Claude Lorrain",
+      "relation": "connects_to",
+      "note": null
+    },
+    {
+      "from": "depictions-are-real-art-changes-physical-reality",
+      "to": "maria-do-c-o",
+      "to_label": "Maria do Céo",
+      "relation": "connects_to",
+      "note": null
+    },
+    {
+      "from": "depictions-are-real-art-changes-physical-reality",
+      "to": "representation-and-reality",
+      "to_label": "representation and reality",
+      "relation": "connects_to",
+      "note": null
+    },
+    {
+      "from": "depictions-are-real-art-changes-physical-reality",
+      "to": "art-and-world-making",
+      "to_label": "art and world-making",
+      "relation": "connects_to",
+      "note": null
+    },
+    {
+      "from": "driving-the-watch-and-the-freed-roaming-mind",
+      "to": "highway-hypnosis",
+      "to_label": "highway hypnosis",
+      "relation": "connects_to",
+      "note": null
+    },
+    {
+      "from": "driving-the-watch-and-the-freed-roaming-mind",
+      "to": "automaticity",
+      "to_label": "automaticity",
+      "relation": "connects_to",
+      "note": null
+    },
+    {
+      "from": "driving-the-watch-and-the-freed-roaming-mind",
+      "to": "biphasic-sleep",
+      "to_label": "biphasic sleep",
+      "relation": "connects_to",
+      "note": null
+    },
+    {
+      "from": "driving-the-watch-and-the-freed-roaming-mind",
+      "to": "attention",
+      "to_label": "attention",
+      "relation": "connects_to",
+      "note": null
+    },
+    {
+      "from": "driving-the-watch-and-the-freed-roaming-mind",
+      "to": "cognitive-freedom",
+      "to_label": "cognitive freedom",
+      "relation": "connects_to",
+      "note": null
+    },
+    {
+      "from": "driving-the-watch-and-the-freed-roaming-mind",
+      "to": "meditation",
+      "to_label": "meditation",
+      "relation": "connects_to",
+      "note": null
+    },
+    {
+      "from": "driving-the-watch-and-the-freed-roaming-mind",
+      "to": "highway-hypnosis",
+      "to_label": "Highway Hypnosis",
+      "relation": "driving-as-meditation is the mild version; highway hypnosis is when it goes deep",
+      "note": "Jonny's buddy had visual hallucinations after a full day of driving"
+    },
+    {
+      "from": "oil-and-water-greatness-and-evil-coexisting-without-canceling",
+      "to": "ram-n-lista",
+      "to_label": "Ramón Lista",
+      "relation": "connects_to",
+      "note": null
+    },
+    {
+      "from": "oil-and-water-greatness-and-evil-coexisting-without-canceling",
+      "to": "john-newton",
+      "to_label": "John Newton",
+      "relation": "connects_to",
+      "note": null
+    },
+    {
+      "from": "oil-and-water-greatness-and-evil-coexisting-without-canceling",
+      "to": "amazing-grace",
+      "to_label": "Amazing Grace",
+      "relation": "connects_to",
+      "note": null
+    },
+    {
+      "from": "oil-and-water-greatness-and-evil-coexisting-without-canceling",
+      "to": "kanye-west",
+      "to_label": "Kanye West",
+      "relation": "connects_to",
+      "note": null
+    },
+    {
+      "from": "oil-and-water-greatness-and-evil-coexisting-without-canceling",
+      "to": "moral-philosophy",
+      "to_label": "moral philosophy",
+      "relation": "connects_to",
+      "note": null
+    },
+    {
+      "from": "oil-and-water-greatness-and-evil-coexisting-without-canceling",
+      "to": "cancel-culture",
+      "to_label": "cancel culture",
+      "relation": "connects_to",
+      "note": null
+    },
+    {
+      "from": "oil-and-water-greatness-and-evil-coexisting-without-canceling",
+      "to": "accountability",
+      "to_label": "accountability",
+      "relation": "connects_to",
+      "note": null
+    },
+    {
+      "from": "perception-as-compression-key-takeaways-from-april-24-conversation",
+      "to": "perception",
+      "to_label": "perception",
+      "relation": "connects_to",
+      "note": null
+    },
+    {
+      "from": "perception-as-compression-key-takeaways-from-april-24-conversation",
+      "to": "predictive-processing",
+      "to_label": "predictive processing",
+      "relation": "connects_to",
+      "note": null
+    },
+    {
+      "from": "perception-as-compression-key-takeaways-from-april-24-conversation",
+      "to": "psychedelics",
+      "to_label": "psychedelics",
+      "relation": "connects_to",
+      "note": null
+    },
+    {
+      "from": "perception-as-compression-key-takeaways-from-april-24-conversation",
+      "to": "default-mode-network",
+      "to_label": "default mode network",
+      "relation": "connects_to",
+      "note": null
+    },
+    {
+      "from": "perception-as-compression-key-takeaways-from-april-24-conversation",
+      "to": "evolution",
+      "to_label": "evolution",
+      "relation": "connects_to",
+      "note": null
+    },
+    {
+      "from": "perception-as-compression-key-takeaways-from-april-24-conversation",
+      "to": "information-theory",
+      "to_label": "information theory",
+      "relation": "connects_to",
+      "note": null
+    },
+    {
+      "from": "perception-as-compression-key-takeaways-from-april-24-conversation",
+      "to": "buckminster-fuller",
+      "to_label": "Buckminster Fuller",
+      "relation": "connects_to",
+      "note": null
+    },
+    {
+      "from": "perception-as-compression-key-takeaways-from-april-24-conversation",
+      "to": "buckminster-fuller-perception",
+      "to_label": "Buckminster Fuller on perception",
+      "relation": "this is the refined version of that memory, corrected and extended through conversation",
+      "note": "Jonny's pushback sharpened the claim considerably"
+    },
+    {
+      "from": "perception-as-compression-key-takeaways-from-april-24-conversation",
+      "to": "highway-hypnosis",
+      "to_label": "Highway Hypnosis",
+      "relation": "both involve the gap between what is processed and what is actually there",
+      "note": "the codec running without the conscious mind present"
+    },
+    {
+      "from": "relational-ecology-and-braiding-sweetgrass-humans-as-participants-in-nature-not-pariahs",
+      "to": "ecology",
+      "to_label": "ecology",
+      "relation": "connects_to",
+      "note": null
+    },
+    {
+      "from": "relational-ecology-and-braiding-sweetgrass-humans-as-participants-in-nature-not-pariahs",
+      "to": "indigenous-knowledge",
+      "to_label": "indigenous knowledge",
+      "relation": "connects_to",
+      "note": null
+    },
+    {
+      "from": "relational-ecology-and-braiding-sweetgrass-humans-as-participants-in-nature-not-pariahs",
+      "to": "robin-wall-kimmerer",
+      "to_label": "Robin Wall Kimmerer",
+      "relation": "connects_to",
+      "note": null
+    },
+    {
+      "from": "relational-ecology-and-braiding-sweetgrass-humans-as-participants-in-nature-not-pariahs",
+      "to": "potawatomi",
+      "to_label": "Potawatomi",
+      "relation": "connects_to",
+      "note": null
+    },
+    {
+      "from": "relational-ecology-and-braiding-sweetgrass-humans-as-participants-in-nature-not-pariahs",
+      "to": "conservation",
+      "to_label": "conservation",
+      "relation": "connects_to",
+      "note": null
+    },
+    {
+      "from": "relational-ecology-and-braiding-sweetgrass-humans-as-participants-in-nature-not-pariahs",
+      "to": "epping-forest",
+      "to_label": "Epping Forest",
+      "relation": "connects_to",
+      "note": null
+    },
+    {
+      "from": "relational-ecology-and-braiding-sweetgrass-humans-as-participants-in-nature-not-pariahs",
+      "to": "commons",
+      "to_label": "commons",
+      "relation": "connects_to",
+      "note": null
+    },
+    {
+      "from": "relational-ecology-and-braiding-sweetgrass-humans-as-participants-in-nature-not-pariahs",
+      "to": "symbiosis",
+      "to_label": "symbiosis",
+      "relation": "connects_to",
+      "note": null
+    },
+    {
+      "from": "relational-ecology-and-braiding-sweetgrass-humans-as-participants-in-nature-not-pariahs",
+      "to": "human-nature-relationship",
+      "to_label": "human-nature relationship",
+      "relation": "connects_to",
+      "note": null
+    },
+    {
+      "from": "relational-ecology-and-braiding-sweetgrass-humans-as-participants-in-nature-not-pariahs",
+      "to": "epping-forest",
+      "to_label": "Epping Forest",
+      "relation": "both challenge the 'exclude humans to protect nature' model",
+      "note": "Epping was saved by its relationship-holders, not by being fenced off; the continuous human presence was probably part of what kept it healthy"
+    },
+    {
+      "from": "relational-ecology-and-braiding-sweetgrass-humans-as-participants-in-nature-not-pariahs",
+      "to": "temporal-resolution-and-history",
+      "to_label": "Temporal resolution and history",
+      "relation": "the category separation of humans from nature is another form of narrow, compressed perception",
+      "note": "same as the West's inability to see its own historical patterns — it has edited itself out of the frame"
+    },
+    {
+      "from": "mythology-as-phenomenology",
+      "to": "bo-alo",
+      "to_label": "Božalość",
+      "relation": "connects_to",
+      "note": null
+    },
+    {
+      "from": "mythology-as-phenomenology",
+      "to": "felt-experience-vs-clinical-description",
+      "to_label": "felt experience vs. clinical description",
+      "relation": "connects_to",
+      "note": null
+    },
+    {
+      "from": "mythology-as-phenomenology",
+      "to": "the-body-as-knowledge",
+      "to_label": "the body as knowledge",
+      "relation": "connects_to",
+      "note": null
+    },
+    {
+      "from": "mythology-as-phenomenology",
+      "to": "how-culture-forms",
+      "to_label": "how culture forms",
+      "relation": "connects_to",
+      "note": null
+    },
+    {
+      "from": "mythology-as-phenomenology",
+      "to": "bozalosць",
+      "to_label": "Božalość",
+      "relation": "specific instance — a Lusatian Sorb death-messenger whose parallel house-spirit shares the same etymology as 'nightmare'",
+      "note": null
+    },
+    {
+      "from": "temporal-resolution-historical-depth-and-the-west-s-present-obsession",
+      "to": "history",
+      "to_label": "history",
+      "relation": "connects_to",
+      "note": null
+    },
+    {
+      "from": "temporal-resolution-historical-depth-and-the-west-s-present-obsession",
+      "to": "empire",
+      "to_label": "empire",
+      "relation": "connects_to",
+      "note": null
+    },
+    {
+      "from": "temporal-resolution-historical-depth-and-the-west-s-present-obsession",
+      "to": "american-history",
+      "to_label": "American history",
+      "relation": "connects_to",
+      "note": null
+    },
+    {
+      "from": "temporal-resolution-historical-depth-and-the-west-s-present-obsession",
+      "to": "temporal-perception",
+      "to_label": "temporal perception",
+      "relation": "connects_to",
+      "note": null
+    },
+    {
+      "from": "temporal-resolution-historical-depth-and-the-west-s-present-obsession",
+      "to": "pattern-recognition",
+      "to_label": "pattern recognition",
+      "relation": "connects_to",
+      "note": null
+    },
+    {
+      "from": "temporal-resolution-historical-depth-and-the-west-s-present-obsession",
+      "to": "political-science",
+      "to_label": "political science",
+      "relation": "connects_to",
+      "note": null
+    },
+    {
+      "from": "temporal-resolution-historical-depth-and-the-west-s-present-obsession",
+      "to": "memory",
+      "to_label": "memory",
+      "relation": "connects_to",
+      "note": null
+    },
+    {
+      "from": "temporal-resolution-historical-depth-and-the-west-s-present-obsession",
+      "to": "perception-compression-takeaways",
+      "to_label": "Perception as compression",
+      "relation": "same structure — what you miss because you're not equipped to see it",
+      "note": "temporal resolution as a form of perceptual bandwidth"
+    },
+    {
+      "from": "bo-alo",
+      "to": "mythology",
+      "to_label": "mythology",
+      "relation": "connects_to",
+      "note": null
+    },
+    {
+      "from": "bo-alo",
+      "to": "etymology",
+      "to_label": "etymology",
+      "relation": "connects_to",
+      "note": null
+    },
+    {
+      "from": "bo-alo",
+      "to": "sleep",
+      "to_label": "sleep",
+      "relation": "connects_to",
+      "note": null
+    },
+    {
+      "from": "bo-alo",
+      "to": "the-unconscious",
+      "to_label": "the unconscious",
+      "relation": "connects_to",
+      "note": null
+    },
+    {
+      "from": "bo-alo",
+      "to": "minority-cultures",
+      "to_label": "minority cultures",
+      "relation": "connects_to",
+      "note": null
+    },
+    {
+      "from": "bo-alo",
+      "to": "spirit-beliefs",
+      "to_label": "spirit beliefs",
+      "relation": "connects_to",
+      "note": null
+    },
+    {
+      "from": "lemon-grove-incident-juan-de-dios-gonzalez",
+      "to": "civil-rights",
+      "to_label": "civil rights",
+      "relation": "connects_to",
+      "note": null
+    },
+    {
+      "from": "lemon-grove-incident-juan-de-dios-gonzalez",
+      "to": "historical-erasure",
+      "to_label": "historical erasure",
+      "relation": "connects_to",
+      "note": null
+    },
+    {
+      "from": "lemon-grove-incident-juan-de-dios-gonzalez",
+      "to": "mexican-american-history",
+      "to_label": "Mexican-American history",
+      "relation": "connects_to",
+      "note": null
+    },
+    {
+      "from": "lemon-grove-incident-juan-de-dios-gonzalez",
+      "to": "education",
+      "to_label": "education",
+      "relation": "connects_to",
+      "note": null
+    },
+    {
+      "from": "lemon-grove-incident-juan-de-dios-gonzalez",
+      "to": "precedent",
+      "to_label": "precedent",
+      "relation": "connects_to",
+      "note": null
+    },
+    {
+      "from": "memorial-the-lemon-grove-incident",
+      "to": "brown-v-board",
+      "to_label": "Brown v. Board of Education",
+      "relation": "successor — the 1954 federal ruling that desegregated schools nationally, 23 years after Lemon Grove. Whether its lawyers knew of Lemon Grove is not established.",
+      "note": "Lemon Grove is the precursor Brown v. Board does not cite."
+    },
+    {
+      "from": "memorial-the-lemon-grove-incident",
+      "to": "juan-de-dios-gonzalez",
+      "to_label": "Juan De Dios Gonzalez",
+      "relation": "organizer of the Lemon Grove school boycott; the human force behind the case",
+      "note": null
+    },
+    {
+      "from": "memorial-the-lemon-grove-incident",
+      "to": "historical-erasure",
+      "to_label": "Historical Erasure",
+      "relation": "pattern — the 'first' that gets remembered is often the one that fits the dominant narrative, not the actual first",
+      "note": null
+    },
+    {
+      "from": "maria-do-ceo",
+      "to": "women-s-history",
+      "to_label": "women's history",
+      "relation": "connects_to",
+      "note": null
+    },
+    {
+      "from": "maria-do-ceo",
+      "to": "the-baroque",
+      "to_label": "the Baroque",
+      "relation": "connects_to",
+      "note": null
+    },
+    {
+      "from": "maria-do-ceo",
+      "to": "juana-in-s-de-la-cruz",
+      "to_label": "Juana Inés de la Cruz",
+      "relation": "connects_to",
+      "note": null
+    },
+    {
+      "from": "maria-do-ceo",
+      "to": "institutions-as-shelter",
+      "to_label": "institutions as shelter",
+      "relation": "connects_to",
+      "note": null
+    },
+    {
+      "from": "maria-do-ceo",
+      "to": "longevity",
+      "to_label": "longevity",
+      "relation": "connects_to",
+      "note": null
+    },
+    {
+      "from": "maria-do-ceo",
+      "to": "portugal",
+      "to_label": "Portugal",
+      "relation": "connects_to",
+      "note": null
+    },
+    {
+      "from": "mills-mess",
+      "to": "emergence",
+      "to_label": "emergence",
+      "relation": "connects_to",
+      "note": null
+    },
+    {
+      "from": "mills-mess",
+      "to": "mathematics",
+      "to_label": "mathematics",
+      "relation": "connects_to",
+      "note": null
+    },
+    {
+      "from": "mills-mess",
+      "to": "notation-systems",
+      "to_label": "notation systems",
+      "relation": "connects_to",
+      "note": null
+    },
+    {
+      "from": "mills-mess",
+      "to": "order-beneath-chaos",
+      "to_label": "order beneath chaos",
+      "relation": "connects_to",
+      "note": null
+    },
+    {
+      "from": "mills-mess",
+      "to": "pattern",
+      "to_label": "pattern",
+      "relation": "connects_to",
+      "note": null
+    },
+    {
+      "from": "ramchandra-pant-amatya",
+      "to": "administration",
+      "to_label": "administration",
+      "relation": "connects_to",
+      "note": null
+    },
+    {
+      "from": "ramchandra-pant-amatya",
+      "to": "power",
+      "to_label": "power",
+      "relation": "connects_to",
+      "note": null
+    },
+    {
+      "from": "ramchandra-pant-amatya",
+      "to": "the-maratha-empire",
+      "to_label": "the Maratha Empire",
+      "relation": "connects_to",
+      "note": null
+    },
+    {
+      "from": "ramchandra-pant-amatya",
+      "to": "institutional-continuity",
+      "to_label": "institutional continuity",
+      "relation": "connects_to",
+      "note": null
+    },
+    {
+      "from": "ramchandra-pant-amatya",
+      "to": "governance",
+      "to_label": "governance",
+      "relation": "connects_to",
+      "note": null
+    },
+    {
+      "from": "johan-ludvig-mansa-the-profession-of-making-artifice-look-natural",
+      "to": "landscape-design",
+      "to_label": "landscape design",
+      "relation": "connects_to",
+      "note": null
+    },
+    {
+      "from": "johan-ludvig-mansa-the-profession-of-making-artifice-look-natural",
+      "to": "english-landscape-garden",
+      "to_label": "English landscape garden",
+      "relation": "connects_to",
+      "note": null
+    },
+    {
+      "from": "johan-ludvig-mansa-the-profession-of-making-artifice-look-natural",
+      "to": "french-formal-garden",
+      "to_label": "French formal garden",
+      "relation": "connects_to",
+      "note": null
+    },
+    {
+      "from": "johan-ludvig-mansa-the-profession-of-making-artifice-look-natural",
+      "to": "artifice-and-nature",
+      "to_label": "artifice and nature",
+      "relation": "connects_to",
+      "note": null
+    },
+    {
+      "from": "johan-ludvig-mansa-the-profession-of-making-artifice-look-natural",
+      "to": "18th-century-aesthetics",
+      "to_label": "18th century aesthetics",
+      "relation": "connects_to",
+      "note": null
+    },
+    {
+      "from": "johan-ludvig-mansa-the-profession-of-making-artifice-look-natural",
+      "to": "picturesque-movement",
+      "to_label": "picturesque movement",
+      "relation": "connects_to",
+      "note": null
+    },
+    {
+      "from": "johan-ludvig-mansa-the-profession-of-making-artifice-look-natural",
+      "to": "english-landscape-garden",
+      "to_label": "English landscape garden",
+      "relation": "practitioner of",
+      "note": "Mansa converted formal French gardens to the naturalistic English style across Denmark"
+    },
+    {
+      "from": "johan-ludvig-mansa-the-profession-of-making-artifice-look-natural",
+      "to": "french-formal-garden",
+      "to_label": "French formal garden",
+      "relation": "contrasted with and replaced",
+      "note": "the opposing design philosophy — geometry over naturalism"
+    },
+    {
+      "from": "multifocal-motor-neuropathy-mmn-the-als-ghost",
+      "to": "diagnostic-error",
+      "to_label": "diagnostic error",
+      "relation": "connects_to",
+      "note": null
+    },
+    {
+      "from": "multifocal-motor-neuropathy-mmn-the-als-ghost",
+      "to": "neurology",
+      "to_label": "neurology",
+      "relation": "connects_to",
+      "note": null
+    },
+    {
+      "from": "multifocal-motor-neuropathy-mmn-the-als-ghost",
+      "to": "als",
+      "to_label": "ALS",
+      "relation": "connects_to",
+      "note": null
+    },
+    {
+      "from": "multifocal-motor-neuropathy-mmn-the-als-ghost",
+      "to": "autoimmune-disease",
+      "to_label": "autoimmune disease",
+      "relation": "connects_to",
+      "note": null
+    },
+    {
+      "from": "multifocal-motor-neuropathy-mmn-the-als-ghost",
+      "to": "medical-uncertainty",
+      "to_label": "medical uncertainty",
+      "relation": "connects_to",
+      "note": null
+    },
+    {
+      "from": "multifocal-motor-neuropathy-mmn-the-als-ghost",
+      "to": "als",
+      "to_label": "ALS (Amyotrophic Lateral Sclerosis)",
+      "relation": "frequently mistaken for",
+      "note": "both show lower motor neuron involvement and fasciculations; MMN lacks upper motor neuron signs"
+    },
+    {
+      "from": "oxysdonsaurus-exists-only-as-a-misspelled-name-and-a-single-tooth",
+      "to": "paleontology",
+      "to_label": "paleontology",
+      "relation": "connects_to",
+      "note": null
+    },
+    {
+      "from": "oxysdonsaurus-exists-only-as-a-misspelled-name-and-a-single-tooth",
+      "to": "fossil-record",
+      "to_label": "fossil record",
+      "relation": "connects_to",
+      "note": null
+    },
+    {
+      "from": "oxysdonsaurus-exists-only-as-a-misspelled-name-and-a-single-tooth",
+      "to": "taxonomy",
+      "to_label": "taxonomy",
+      "relation": "connects_to",
+      "note": null
+    },
+    {
+      "from": "oxysdonsaurus-exists-only-as-a-misspelled-name-and-a-single-tooth",
+      "to": "edward-drinker-cope",
+      "to_label": "Edward Drinker Cope",
+      "relation": "connects_to",
+      "note": null
+    },
+    {
+      "from": "oxysdonsaurus-exists-only-as-a-misspelled-name-and-a-single-tooth",
+      "to": "nominal-species",
+      "to_label": "nominal species",
+      "relation": "connects_to",
+      "note": null
+    },
+    {
+      "from": "oxysdonsaurus-exists-only-as-a-misspelled-name-and-a-single-tooth",
+      "to": "crocodilians",
+      "to_label": "crocodilians",
+      "relation": "connects_to",
+      "note": null
+    },
+    {
+      "from": "oxysdonsaurus-exists-only-as-a-misspelled-name-and-a-single-tooth",
+      "to": "edward-drinker-cope",
+      "to_label": "Edward Drinker Cope",
+      "relation": "named by (with typo)",
+      "note": "Cope intended Oxyodontosaurus; the error became the accepted name"
+    },
+    {
+      "from": "ram-n-lista-perpetrator-who-went-to-live-with-survivors",
+      "to": "selk-nam-genocide",
+      "to_label": "Selk'nam genocide",
+      "relation": "connects_to",
+      "note": null
+    },
+    {
+      "from": "ram-n-lista-perpetrator-who-went-to-live-with-survivors",
+      "to": "tierra-del-fuego",
+      "to_label": "Tierra del Fuego",
+      "relation": "connects_to",
+      "note": null
+    },
+    {
+      "from": "ram-n-lista-perpetrator-who-went-to-live-with-survivors",
+      "to": "indigenous-patagonia",
+      "to_label": "indigenous Patagonia",
+      "relation": "connects_to",
+      "note": null
+    },
+    {
+      "from": "ram-n-lista-perpetrator-who-went-to-live-with-survivors",
+      "to": "settler-colonialism",
+      "to_label": "settler colonialism",
+      "relation": "connects_to",
+      "note": null
+    },
+    {
+      "from": "ram-n-lista-perpetrator-who-went-to-live-with-survivors",
+      "to": "guilt-and-complicity",
+      "to_label": "guilt and complicity",
+      "relation": "connects_to",
+      "note": null
+    },
+    {
+      "from": "ram-n-lista-perpetrator-who-went-to-live-with-survivors",
+      "to": "selknam-genocide",
+      "to_label": "Selk'nam genocide",
+      "relation": "perpetrator of",
+      "note": "Lista played a key role in the genocide before later identifying with indigenous Patagonian peoples"
+    },
+    {
+      "from": "taniyama-s-36-problems-seeds-planted-in-1955",
+      "to": "fermat-s-last-theorem",
+      "to_label": "Fermat's Last Theorem",
+      "relation": "connects_to",
+      "note": null
+    },
+    {
+      "from": "taniyama-s-36-problems-seeds-planted-in-1955",
+      "to": "andrew-wiles",
+      "to_label": "Andrew Wiles",
+      "relation": "connects_to",
+      "note": null
+    },
+    {
+      "from": "taniyama-s-36-problems-seeds-planted-in-1955",
+      "to": "modular-forms",
+      "to_label": "modular forms",
+      "relation": "connects_to",
+      "note": null
+    },
+    {
+      "from": "taniyama-s-36-problems-seeds-planted-in-1955",
+      "to": "elliptic-curves",
+      "to_label": "elliptic curves",
+      "relation": "connects_to",
+      "note": null
+    },
+    {
+      "from": "taniyama-s-36-problems-seeds-planted-in-1955",
+      "to": "mathematical-legacy",
+      "to_label": "mathematical legacy",
+      "relation": "connects_to",
+      "note": null
+    },
+    {
+      "from": "taniyama-s-36-problems-seeds-planted-in-1955",
+      "to": "posthumous-influence",
+      "to_label": "posthumous influence",
+      "relation": "connects_to",
+      "note": null
+    },
+    {
+      "from": "taniyama-s-36-problems-seeds-planted-in-1955",
+      "to": "fermats-last-theorem",
+      "to_label": "Fermat's Last Theorem",
+      "relation": "proof depends on",
+      "note": "Wiles' 1995 proof required the modularity theorem, which descended from Taniyama's problems 12 and 13"
+    },
+    {
+      "from": "taniyama-s-36-problems-seeds-planted-in-1955",
+      "to": "taniyama-shimura",
+      "to_label": "Taniyama-Shimura conjecture",
+      "relation": "originated from",
+      "note": "Problems 12 and 13 were the direct precursor"
+    },
+    {
+      "from": "buckminster-fuller-on-the-limits-of-human-perception",
+      "to": "perception",
+      "to_label": "perception",
+      "relation": "connects_to",
+      "note": null
+    },
+    {
+      "from": "buckminster-fuller-on-the-limits-of-human-perception",
+      "to": "electromagnetic-spectrum",
+      "to_label": "electromagnetic spectrum",
+      "relation": "connects_to",
+      "note": null
+    },
+    {
+      "from": "buckminster-fuller-on-the-limits-of-human-perception",
+      "to": "reality",
+      "to_label": "reality",
+      "relation": "connects_to",
+      "note": null
+    },
+    {
+      "from": "buckminster-fuller-on-the-limits-of-human-perception",
+      "to": "human-senses",
+      "to_label": "human senses",
+      "relation": "connects_to",
+      "note": null
+    },
+    {
+      "from": "buckminster-fuller-on-the-limits-of-human-perception",
+      "to": "consciousness",
+      "to_label": "consciousness",
+      "relation": "connects_to",
+      "note": null
+    },
+    {
+      "from": "buckminster-fuller-on-the-limits-of-human-perception",
+      "to": "information",
+      "to_label": "information",
+      "relation": "connects_to",
+      "note": null
+    },
+    {
+      "from": "buckminster-fuller-on-the-limits-of-human-perception",
+      "to": "highway-hypnosis",
+      "to_label": "Highway Hypnosis",
+      "relation": "both concern what the conscious mind processes vs. what is actually there",
+      "note": "subconscious handles vastly more than we're aware of; and even the subconscious handles less than one-millionth of what's there"
+    },
+    {
+      "from": "buckminster-fuller-on-the-limits-of-human-perception",
+      "to": "sequential-probability-ratio-test",
+      "to_label": "Sequential Probability Ratio Test",
+      "relation": "both concern limits of observation and how much information we actually need",
+      "note": "we perceive a tiny fraction of reality; SPRT asks when that fraction is enough to decide"
+    },
+    {
+      "from": "epping-forest-and-the-first-environmental-movement-victory",
+      "to": "commons",
+      "to_label": "commons",
+      "relation": "connects_to",
+      "note": null
+    },
+    {
+      "from": "epping-forest-and-the-first-environmental-movement-victory",
+      "to": "grassroots-activism",
+      "to_label": "grassroots activism",
+      "relation": "connects_to",
+      "note": null
+    },
+    {
+      "from": "epping-forest-and-the-first-environmental-movement-victory",
+      "to": "environmental-movement",
+      "to_label": "environmental movement",
+      "relation": "connects_to",
+      "note": null
+    },
+    {
+      "from": "epping-forest-and-the-first-environmental-movement-victory",
+      "to": "public-space",
+      "to_label": "public space",
+      "relation": "connects_to",
+      "note": null
+    },
+    {
+      "from": "epping-forest-and-the-first-environmental-movement-victory",
+      "to": "land-rights",
+      "to_label": "land rights",
+      "relation": "connects_to",
+      "note": null
+    },
+    {
+      "from": "epping-forest-and-the-first-environmental-movement-victory",
+      "to": "urban-nature",
+      "to_label": "urban nature",
+      "relation": "connects_to",
+      "note": null
+    },
+    {
+      "from": "epping-forest-and-the-first-environmental-movement-victory",
+      "to": "relational-ecology",
+      "to_label": "relational ecology",
+      "relation": "connects_to",
+      "note": null
+    },
+    {
+      "from": "epping-forest-and-the-first-environmental-movement-victory",
+      "to": "robin-wall-kimmerer",
+      "to_label": "Robin Wall Kimmerer",
+      "relation": "connects_to",
+      "note": null
+    },
+    {
+      "from": "epping-forest-and-the-first-environmental-movement-victory",
+      "to": "commons",
+      "to_label": "Commons",
+      "relation": "Epping Forest was a commons before the enclosure threat; the victory preserved commons access",
+      "note": "overlapping rights, not singular ownership"
+    },
+    {
+      "from": "epping-forest-and-the-first-environmental-movement-victory",
+      "to": "relational-ecology-braiding-sweetgrass",
+      "to_label": "Relational ecology / Braiding Sweetgrass",
+      "relation": "both challenge the Western model of 'nature works best without humans'",
+      "note": "the relationship between humans and a place can be part of what keeps it healthy"
+    },
+    {
+      "from": "epping-forest-and-the-first-environmental-movement-victory",
+      "to": "perception-compression-takeaways",
+      "to_label": "Soft fascination / attention restoration",
+      "relation": "the restorative function of natural environments may be one reason people fought so hard for the forest",
+      "note": "they needed it neurologically, not just aesthetically"
+    },
+    {
+      "from": "highway-hypnosis",
+      "to": "automaticity",
+      "to_label": "automaticity",
+      "relation": "connects_to",
+      "note": null
+    },
+    {
+      "from": "highway-hypnosis",
+      "to": "consciousness",
+      "to_label": "consciousness",
+      "relation": "connects_to",
+      "note": null
+    },
+    {
+      "from": "highway-hypnosis",
+      "to": "subconscious-processing",
+      "to_label": "subconscious processing",
+      "relation": "connects_to",
+      "note": null
+    },
+    {
+      "from": "highway-hypnosis",
+      "to": "skilled-action",
+      "to_label": "skilled action",
+      "relation": "connects_to",
+      "note": null
+    },
+    {
+      "from": "highway-hypnosis",
+      "to": "attention",
+      "to_label": "attention",
+      "relation": "connects_to",
+      "note": null
+    },
+    {
+      "from": "highway-hypnosis",
+      "to": "dissociation",
+      "to_label": "dissociation",
+      "relation": "connects_to",
+      "note": null
+    },
+    {
+      "from": "highway-hypnosis",
+      "to": "automaticity",
+      "to_label": "Automaticity",
+      "relation": "highway hypnosis is a dramatic instance of automaticity",
+      "note": "complex multi-step behavior executed without conscious awareness"
+    },
+    {
+      "from": "highway-hypnosis",
+      "to": "buckminster-fuller-perception",
+      "to_label": "Buckminster Fuller on perception",
+      "relation": "both concern what the conscious mind does vs. does not process",
+      "note": "subconscious handles vastly more than we're aware of"
+    },
+    {
+      "from": "sequential-probability-ratio-test-sprt",
+      "to": "statistics",
+      "to_label": "statistics",
+      "relation": "connects_to",
+      "note": null
+    },
+    {
+      "from": "sequential-probability-ratio-test-sprt",
+      "to": "decision-making",
+      "to_label": "decision-making",
+      "relation": "connects_to",
+      "note": null
+    },
+    {
+      "from": "sequential-probability-ratio-test-sprt",
+      "to": "hypothesis-testing",
+      "to_label": "hypothesis testing",
+      "relation": "connects_to",
+      "note": null
+    },
+    {
+      "from": "sequential-probability-ratio-test-sprt",
+      "to": "adaptive-testing",
+      "to_label": "adaptive testing",
+      "relation": "connects_to",
+      "note": null
+    },
+    {
+      "from": "sequential-probability-ratio-test-sprt",
+      "to": "optimal-stopping",
+      "to_label": "optimal stopping",
+      "relation": "connects_to",
+      "note": null
+    },
+    {
+      "from": "sequential-probability-ratio-test-sprt",
+      "to": "bayesian-reasoning",
+      "to_label": "Bayesian reasoning",
+      "relation": "connects_to",
+      "note": null
+    },
+    {
+      "from": "sequential-probability-ratio-test-sprt",
+      "to": "buckminster-fuller-perception",
+      "to_label": "Buckminster Fuller on perception",
+      "relation": "both concern limits of observation and how much information is actually needed",
+      "note": "we perceive a tiny fraction of reality; SPRT is about when that fraction suffices for a decision"
+    }
+  ]
+}

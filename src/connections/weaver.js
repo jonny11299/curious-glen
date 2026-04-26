@@ -5,14 +5,14 @@
 
   WHEN TO RUN
     After every session, once memories have been written:
-      node src/connectors/builder.js
+      node src/connections/weaver.js
     This scans knowledge/internet/ and knowledge/human/ and writes
     the full graph to connectors/graph.json.
 
   QUERYING GLEN'S KNOWLEDGE
     Import query() to find how concepts are connected:
 
-      import { query } from './src/connectors/weaver.js';
+      import { query } from './src/connections/weaver.js';
 
       query('juggling')
       // → what memories mention it, what it connects to
@@ -127,5 +127,5 @@ export function query(term) {
 
 if (process.argv[1] === fileURLToPath(import.meta.url)) {
   const graph = buildGraph();
-  console.log(`[connectors] graph built — ${Object.keys(graph.nodes).length} nodes, ${graph.edges.length} edges`);
+  console.log(`[connections] graph built — ${Object.keys(graph.nodes).length} nodes, ${graph.edges.length} edges`);
 }
