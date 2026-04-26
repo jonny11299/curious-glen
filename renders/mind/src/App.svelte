@@ -8,15 +8,15 @@
   import Wishes from "./views/Wishes.svelte";
 
   const viewKeys = {
-    "1": "memories",
-    "2": "graph",
-    "3": "sessions",
+    "1": "sessions",
+    "2": "memories",
+    "3": "graph",
     "4": "suppositions",
     "5": "wishes",
   };
 
   function handleKeydown(e) {
-    if (e.target.tagName === 'INPUT') return;
+    if (e.target.tagName === "INPUT") return;
     if (viewKeys[e.key]) {
       currentView.set(viewKeys[e.key]);
       return;

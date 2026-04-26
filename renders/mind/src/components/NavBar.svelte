@@ -1,12 +1,12 @@
 <script>
-  import { currentView } from '../stores.js';
+  import { currentView } from "../stores.js";
 
   const views = [
-    { key: '1', id: 'memories',     label: 'memories'     },
-    { key: '2', id: 'graph',        label: 'graph'        },
-    { key: '3', id: 'sessions',     label: 'sessions'     },
-    { key: '4', id: 'suppositions', label: 'suppositions' },
-    { key: '5', id: 'wishes',       label: 'wishes'       },
+    { key: "1", id: "sessions", label: "sessions" },
+    { key: "2", id: "memories", label: "memories" },
+    { key: "3", id: "graph", label: "graph" },
+    { key: "4", id: "suppositions", label: "suppositions" },
+    { key: "5", id: "wishes", label: "wishes" },
   ];
 </script>
 
@@ -14,7 +14,10 @@
   <span class="brand">curious glen</span>
   <div class="tabs">
     {#each views as v}
-      <button class:active={$currentView === v.id} on:click={() => currentView.set(v.id)}>
+      <button
+        class:active={$currentView === v.id}
+        on:click={() => currentView.set(v.id)}
+      >
         <span class="num">{v.key}</span>{v.label}
       </button>
     {/each}
@@ -53,7 +56,9 @@
     cursor: pointer;
     padding: 0.3rem 0.75rem;
     border-radius: 2px;
-    transition: color 0.12s, background 0.12s;
+    transition:
+      color 0.12s,
+      background 0.12s;
   }
 
   button:hover {
