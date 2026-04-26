@@ -1,12 +1,3 @@
-/* todo: 
-
-put sessions in a "sessions" folder
-automatically open the viewer that shows you the latest session
-lets you talk to it
-
-
-*/
-
 import { writeFileSync, readFileSync, existsSync } from 'fs';
 import { fileURLToPath } from 'url';
 import { dirname, join } from 'path';
